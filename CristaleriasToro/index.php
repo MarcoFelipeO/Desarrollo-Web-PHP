@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Jugueteria RainBow</title>
+    <title> Floreria</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -61,7 +61,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0 texto-éxito">Jugueteria RainBow</h2>
+            <h2 class="m-0 texto-éxito"> Floreria</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -246,7 +246,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Si desea mas informaciones</h5>
-                        <p>Por favor comunicarse directamente con la oficina principal de Jugueteria RainBow</p>
+                        <p>Por favor comunicarse directamente con la oficina principal de Floreria</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                         </div>
                     </div>
@@ -256,7 +256,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a href="#">Jugueteria RainBow</a>, Todo los derechos Reservados.
+                            &copy; <a href="#"> Floreria</a>, Todo los derechos Reservados.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
