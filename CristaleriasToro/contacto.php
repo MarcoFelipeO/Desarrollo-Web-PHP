@@ -81,7 +81,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link">Home</a>
+                <a href="index.php" class="nav-item nav-link">Inicio</a>
                 <a href="Quienes_Somos.php" class="nav-item nav-link">Quienes Somos</a>
                 <a href="codigoS.php" class="nav-item nav-link">Productos</a>
                 <a href="contacto.php" class="nav-item nav-link active">contacto</a>

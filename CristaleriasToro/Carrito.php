@@ -51,7 +51,7 @@ require_once "PHP/config.php";
                 <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/foto1.png">    </a>
                 </div>
                 <div class="container-fluid">      
-                <a class="navbar-brand" href="index.php"> <strong>Home</strong></a> 
+                <a class="navbar-brand" href="index.php"> <strong>Inicio</strong></a> 
                 <a class="navbar-brand" href="Quienes_Somos.php"><strong>Quienes Somos</strong></a>
                 <a class="navbar-brand" href=" codigoS.php"><strong>Productos</strong></a>
                 <a class="navbar-brand" href="contacto.php "><strong>Contactanos</strong></a>
