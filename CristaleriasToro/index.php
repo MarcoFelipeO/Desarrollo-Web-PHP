@@ -102,7 +102,7 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Vinos Tranquilos</h1>
+                                <h1 class="display-2 text-white animated slideInDown">Plantas de invernadero</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">El principal motivo del color verde es que la botella debe proteger el vino contra la luz. El color verde de las botellas, debido a su tono, puede llegar a filtrar hasta el 60% de la radiación y proteger así al vino.</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
