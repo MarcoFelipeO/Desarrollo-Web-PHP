@@ -36,7 +36,7 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Dagoberto Godoy 182, Cerrillos, Santiago de Chile</small>
+                    <small>Luis Matte ########, Puente Alto, Santiago de Chile</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
@@ -46,7 +46,7 @@
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>Telefono: (56 - 9) 4296 9687</small>
+                    <small>Telefono: (+56 9) 3290 9140</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -204,9 +204,9 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Direccion</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Dagoberto Godoy 182, Cerrillos, Santiago de Chile</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(56 - 2) 2 437 4500</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>CristaleriasToro@gmail.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Luis Matte ########, Puente Alto, Santiago de Chile</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+56 9) 3290 9140</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>mafeorellana09@gmail.com</p>
                         <div class="d-flex pt-2">
                         <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>

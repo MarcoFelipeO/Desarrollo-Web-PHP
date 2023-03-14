@@ -1,3 +1,5 @@
+
+
 <?php
 require_once "../PHP/coneccion.php";
 
@@ -41,7 +43,6 @@ include("header.php"); ?>
                         <th>Codigo</th>
                         <th>Cantidad</th>
                         <th>Categoria</th>
-                        <th>Precio unitario</th>
                         <th>Editar</th>
                         <th>Eliminar</th>
                     </tr>
@@ -58,7 +59,8 @@ include("header.php"); ?>
                             <td><?php echo $data['id']; ?></td>
                             <td><?php echo $data['cantidad']; ?></td>
                             <td><?php echo $data['categoria']; ?></td>
-                        <!--    <td><?php echo $data['precio_unidad']; ?></td>  -->
+                            
+
                             <td>
                                 <form method="post" action="eliminar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
                                     <button class="btn btn-danger" type="submit">Editar</button>
