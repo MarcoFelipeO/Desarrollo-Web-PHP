@@ -74,7 +74,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0 texto-éxito">Floreria </h2>
+            <h2 class="m-0 texto-éxito">Viveros LUANNE </h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -164,9 +164,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Direccion</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Dagoberto Godoy 182, Cerrillos, Santiago de Chile</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(56 - 2) 2 437 4500</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>CristaleriasToro@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Luis matte ###### Puente Alto, Santiago de Chile</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+56 9) 3290 9140</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>mafeorellana09@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
@@ -206,7 +206,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Si desea mas informaciones</h5>
-                    <p>Por favor comunicarse directamente con la oficina principal de Floreria </p>
+                    <p>Por favor comunicarse directamente con la oficina principal de Viveros LUANNE </p>
                 </div>
             </div>
         </div>
@@ -214,7 +214,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Floreria </a>, Todo los derechos Reservados.
+                        &copy; <a href="#">Viveros LUANNE </a>, Todo los derechos Reservados.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/* This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. */-->
