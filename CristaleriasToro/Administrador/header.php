@@ -34,7 +34,7 @@ require_once "../PHP/coneccion.php";
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="productos.php">
-                <div class="sidebar-brand-text mx-3">Cristalerias <sup>Toro</sup></div>
+                <div class="sidebar-brand-text mx-3">Viveros <sup>LUANNE</sup></div>
             </a>
 
             <!-- Divider -->
@@ -55,6 +55,15 @@ require_once "../PHP/coneccion.php";
                     <i class="fas fa-list"></i>
                     <span>Productos</span></a>
             </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="categorias.php">
+                    <i class="fas fa-tag"></i>
+                    <span>DE PRUEBA</span></a>
+            </li>
+            <!-- Nav Item - Tables -->
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -113,7 +122,7 @@ require_once "../PHP/coneccion.php";
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Perfil
+                                    Perfil 
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../Login.php">
