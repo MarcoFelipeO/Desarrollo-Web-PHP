@@ -60,7 +60,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+        <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0 texto-éxito"> Viveros LUANNE</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -68,12 +68,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link active">Inicio</a>
+                <a href="index.php" class="nav-item nav-link active">Home</a>
                 <a href="Quienes_Somos.php" class="nav-item nav-link">Quienes Somos</a>
                 <a href="codigoS.php" class="nav-item nav-link">Productos</a>
                 <a href="contacto.php" class="nav-item nav-link">contacto</a>
             </div>
-            <a href="Login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicia Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="Login.php" class="btn btn-warning rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicia Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -90,7 +90,7 @@
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-2 text-white animated slideInDown">Catalogo de Productos</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">Variedad de productos de vidrio de alta calidad</p>
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
+                                <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +256,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a href="#"> Viveros LUANNE</a>, Todo los derechos Reservados.
+                            &copy; <a href=""> Viveros LUANNE</a>, Todo los derechos Reservados.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

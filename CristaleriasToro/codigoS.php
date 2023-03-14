@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -31,7 +31,7 @@
                 <a href="codigoS.php" class="nav-item nav-link active">Productos</a>
                 <a href="contacto.php" class="nav-item nav-link">contacto</a>
             </div>
-            <a href="Login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicia Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="Login.php" class="btn btn-warning rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicie Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <hr>
@@ -43,7 +43,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <a href="#" class="nav-link text-info" category="all">Todo</a>
+                        <a href="#" class="nav-link text-info" category="all">Todos</a>
                         <?php
                         $query = mysqli_query($coneccion, "SELECT * FROM categorias");
                         while ($data = mysqli_fetch_assoc($query)) { ?>
@@ -55,11 +55,11 @@
         </nav>
     </div>
     <!-- Header-->
-    <header class="bg-primary py-5">
+    <header class="bg-black py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Catalogo de Productos</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Envases de vidrio de todo tipo</p>
+                <p class="lead fw-normal text-white-50 mb-0">Todo tipo de plantas :)</p>
             </div>
         </div>
     </header>
@@ -98,9 +98,9 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="py-5 bg-primary">
+    <footer class="py-5 bg-warning">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Cristalerias Toro 2022</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Viveros LUANNE</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->

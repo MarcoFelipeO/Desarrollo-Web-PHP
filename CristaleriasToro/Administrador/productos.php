@@ -54,7 +54,7 @@ include("header.php"); ?>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion']; ?></td>
                             <td><?php echo $data['precio_pallet']; ?></td>
-                            <td><?php echo $data['codigo']; ?></td>
+                            <td><?php echo $data['id']; ?></td>
                             <td><?php echo $data['cantidad']; ?></td>
                             <td><?php echo $data['categoria']; ?></td>
                             <td>
@@ -110,12 +110,16 @@ include("header.php"); ?>
                                 <input id="p_pallet" class="form-control" type="text" name="p_pallet" placeholder="Precio Pallet" required>
                             </div>
                         </div>
+
+                        <!--
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="codigo">Codigo</label>
                                 <input id="codigo" class="form-control" type="text" name="codigo" placeholder="Codigo" required>
                             </div>
                         </div>
+                        -->
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="categoria">Categoria</label>
