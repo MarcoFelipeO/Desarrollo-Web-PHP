@@ -12,11 +12,63 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link href="css/estilo.css" rel="stylesheet" />
     <link href="css/estilos.css" rel="stylesheet" />
+
+
+    <!--  NUEVAS COSAS Y APARTADO--->
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+
+            <!--  NUEVAS COSAS Y APARTADO--->
+
+
 </head>
 
 <body>
-    <a href="#" class="btn-flotante" id="btnCarrito">Carrito <span class="badge bg-success" id="carrito">0</span></a>
+
+    <a href="#" class="btn-flotante" id="btnCarrito">Carrito de Compras <span class="badge bg-success" id="carrito">0</span></a>
     <!-- Navigation-->
+
+
+ <!-- Topbar Start -->
+ <div class="container-fluid bg-black p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Luis Matte ########, Puente Alto, Santiago de Chile</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Atencion: Lunes a Jueves 8:30 a 16:00 hrs - Viernes de 8:30 a 15:00 hrs</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>Telefono: (+56 9) 3290 9140</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.php" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0 texto-éxito">Viveros LUANNE</h2>
@@ -31,7 +83,7 @@
                 <a href="codigoS.php" class="nav-item nav-link active">Productos</a>
                 <a href="contacto.php" class="nav-item nav-link">contacto</a>
             </div>
-            <a href="Login.php" class="btn btn-warning rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicie Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="Login.php" class="btn btn-warning rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicie Sesion Aqui<i class="fa fa-arrow-right ms-0"></i></a>
         </div>
     </nav>
     <hr>
@@ -43,7 +95,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <a href="#" class="nav-link text-info" category="all">Todos</a>
+                        <a href="#" class="nav-link text-war" category="all">Todos</a>
                         <?php
                         $query = mysqli_query($coneccion, "SELECT * FROM categorias");
                         while ($data = mysqli_fetch_assoc($query)) { ?>
@@ -58,7 +110,7 @@
     <header class="bg-black py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Catalogo de Productos</h1>
+                <p class="display-2 fw-bolder">Catalogo de Productos</p>
                 <p class="lead fw-normal text-white-50 mb-0">Todo tipo de plantas :)</p>
             </div>
         </div>

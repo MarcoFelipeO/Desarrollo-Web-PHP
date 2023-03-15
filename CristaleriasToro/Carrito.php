@@ -38,6 +38,8 @@ require_once "PHP/config.php";
 
 
 <body>
+
+<a href="codigoS.php" class="btn-flotante" >Volver a Comprar <span class="badge bg-success" ></span></a>
    
    
 
