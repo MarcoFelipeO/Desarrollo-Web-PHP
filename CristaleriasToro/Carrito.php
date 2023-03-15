@@ -56,7 +56,7 @@ require_once "PHP/config.php";
                 <a class="navbar-brand" href=" codigoS.php"><strong>Productos</strong></a>
                 <a class="navbar-brand" href="contacto.php "><strong>Contactanos</strong></a>
             </div>
-            <a href="Login.php" class="btn btn-primary rounded-20 py-20 px-lg-20 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-2"></i></a>
+            <a href="Login.php" class="btn btn-warning rounded-5 py-0 px-lg-5 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-2"></i></a>
                 <div>
                     <div class="h-500 d-inline-flex align-items-center mx-n20">
                         <a class="btn btn-square btn-link rounded-20 border-20 border-end border-secondary" href="https://web.facebook.com/pages/Cristaler%C3%ADas-Toro/197906423586073/"><i class="fab fa-facebook-f"></i></a>
@@ -73,7 +73,7 @@ require_once "PHP/config.php";
         </nav>
     </div>
     <!-- Header-->
-    <header class="bg-primary py-5">
+    <header class="bg-black py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="carrito"><strong>Carrito de Compras</strong></h1>
@@ -114,7 +114,7 @@ require_once "PHP/config.php";
         </div>
     </section>
     <!-- Footer-->
-    <header class="bg-primary py-5">
+    <header class="bg-black py-5">
         <div class="container px-4 px-lg-5 my-4">
             <div class="text-center text-white">              
                 <p class="m-3 text-center text-white">Copyright &copy;<strong> Cristalerias Toro 2022</strong></p>                

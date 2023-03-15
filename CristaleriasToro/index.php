@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title> Floreria</title>
+    <title> Viveros LUANNE</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -246,7 +246,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Si desea mas informaciones</h5>
-                        <p>Por favor comunicarse directamente con la oficina principal de Floreria</p>
+                        <p>Por favor comunicarse directamente con la oficina principal de Viveros LUANNE</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                         </div>
                     </div>
