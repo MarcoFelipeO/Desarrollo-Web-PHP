@@ -9,7 +9,7 @@ require_once "PHP/config.php";
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Carrito de Compras</title>
+    <title>Viveros Luanne</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link href="css/estilo.css" rel="stylesheet" />
@@ -50,7 +50,7 @@ require_once "PHP/config.php";
          
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/foto1.png">    </a>
+                <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/foto1.png"></a>
                 </div>
                 <div class="container-fluid">      
                 <a class="navbar-brand" href="index.php"> <strong>Inicio</strong></a> 
@@ -106,7 +106,7 @@ require_once "PHP/config.php";
                     </div>
                 </div>
                 <div class="col-md-5 ms-auto">
-                    <h4><strong>Total a Pagar:</strong> <span id="total_pagar">00</span></h4>
+                    <h4><strong>Total a Pagar:</strong> <span id="total_pagar">$0</span></h4>
                     <div class="d-grid gap-2">
                         <input class="btn btn-primary" type="button" onclick="location='Mercado_P.php'" value="PAGAR"/></input>
                         <button class="btn btn-primary" type="button" id="btnVaciar">VACIAR CARRITO</button>
@@ -116,15 +116,13 @@ require_once "PHP/config.php";
         </div>
     </section>
     <!-- Footer-->
-    <header class="bg-black py-5">
-        <div class="container px-4 px-lg-5 my-4">
-            <div class="text-center text-white">              
-                <p class="m-3 text-center text-white">Copyright &copy;<strong> Cristalerias Toro 2022</strong></p>                
-            </div>
-
+    
 
     
     </footer>
+
+    
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
@@ -155,7 +153,7 @@ require_once "PHP/config.php";
                                 <td>${element.id}</td>
                                 <td>${element.nombre}</td>
                                 <td>${element.precio}</td>
-                                <td>1</td>
+                                <td>${element.cantidad}</td>
                                 <td>${element.precio}</td>
                             </tr>
                             `;
@@ -172,6 +170,15 @@ require_once "PHP/config.php";
         }
     </script>
     </div>
+
+
+    <header class="bg-black py-5">
+        <div class="container px-4 px-lg-5 my-4">
+            <div class="text-center text-white">              
+                <p class="m-2 text-center text-white">Copyright &copy;<strong> Viveros LUANNE 2023</strong></p>                
+            </div>
+    </header>
+
 </body>
 
 </html>

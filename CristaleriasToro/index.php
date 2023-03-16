@@ -83,50 +83,51 @@
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Imagen1Home.jpg'>">
-                <img class="img-fluid" src="img/Imagen1Home.jpg" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/fotodeproductos.jpg'>">
+                <img class="img-fluid" src="img/fotodeproductos.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h1 class="display-2 text-white animated slideInDown">Catalogo de Productos</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Variedad de productos de vidrio de alta calidad</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Variedad de productos, las plantas mas hermosas las encontraras 
+                                    aqui en el Vivero de Luanne</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/VinosTranquilos2.jpg'>">
-                <img class="img-fluid" src="img/VinosTranquilos.jpg" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/arboles.jpg'>">
+                <img class="img-fluid" src="img/arboles.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Plantas de invernadero</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">El principal motivo del color verde es que la botella debe proteger el vino contra la luz. El color verde de las botellas, debido a su tono, puede llegar a filtrar hasta el 60% de la radiación y proteger así al vino.</p>
+                                <h1 class="display-2 text-white animated slideInDown">Arboles</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Los árboles son fuente de vida. No solo en lo tocante a los ecosistemas naturales, sino también para la supervivencia del ser humano.</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/VinosEspumantes2.jpg'>">
-                <img class="img-fluid" src="img/VinosEspumantes.jpg" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/arbustos.jpg'>">
+                <img class="img-fluid" src="img/arbustos.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Vinos Espumantes</h1>
+                                <h1 class="display-2 text-white animated slideInDown">Arbustos</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-3">La curva del fondo, además, hace la botella más resistente.
-
-                                    Gracias a ella aguanta mejor la presión del interior, algo que resulta casi imprescindible en las botellas de vinos espumosos, donde el gas podría reventar una botella más frágil</p>
+                                Los arbustos son importantes no sólo porque confieren estabilidad estructural sino porque además contribuyen significativamente a mantener la alta biodiversidad de los ecosistemas semiáridos.</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/Alimentos2.jpg'>">
                 <img class="img-fluid" src="img/Alimentos.jpg" alt="">
                 <div class="owl-carousel-inner">
@@ -141,6 +142,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/Aguas_jugosV2.jpg'>">
                 <img class="img-fluid" src="img/Aguas_jugos.jpg" alt="">
                 <div class="owl-carousel-inner">
