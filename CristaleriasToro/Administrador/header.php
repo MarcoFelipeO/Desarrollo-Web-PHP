@@ -56,14 +56,14 @@ require_once "../PHP/coneccion.php";
                     <span>Productos</span></a>
             </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="categorias.php">
-                    <i class="fas fa-tag"></i>
-                    <span>DE PRUEBA</span></a>
-            </li>
-            <!-- Nav Item - Tables -->
 
+                     <!-- APARTADO DE PRUEBA NO ES PARA SIEMPRE  -->
+            <li class="nav-item">
+                    <a class="nav-link" href="categorias.php">
+                    <i class="fa fa-tag"></i>
+                    <span>Apartado nuevo de prueba </span></a>
+            </li>
+                      <!-- APARTADO DE PRUEBA NO ES PARA SIEMPRE  -->
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

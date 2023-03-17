@@ -81,7 +81,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.4s">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative" data-dot="<img src='img/fotodeproductos.jpg'>">
                 <img class="img-fluid" src="img/fotodeproductos.jpg" alt="">
@@ -112,8 +112,10 @@
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/arbustos.jpg'>">
-                <img class="img-fluid" src="img/arbustos.jpg" alt="">
+
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/jardines.jpg'>">
+                <img class="img-fluid" src="img/jardines.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -128,71 +130,79 @@
                 </div>
             </div>
 
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Alimentos2.jpg'>">
-                <img class="img-fluid" src="img/Alimentos.jpg" alt="">
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/flores.jpg'>">
+                <img class="img-fluid" src="img/flores.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Alimentos</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Frascos de vidrio perfectos para conservar alimentos, El vidrio es puro y químicamente inerte, por lo que es uno de los contenedores más seguros para mantener los alimentos frescos y sabrosos </p>
+                                <h1 class="display-2 text-white animated slideInDown">Flores y cubresuelos</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Algunas de estas plantas son ávidas de espacio para expandirse, y en ese trajín pueden deteriorar y hasta aniquilar a otras especies del cantero. Puede ser una característica deseable (sobre todo cuando se busca combatir la erosión del suelo o malezas, o cubrir superficies grandes).</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Aguas_jugosV2.jpg'>">
-                <img class="img-fluid" src="img/Aguas_jugos.jpg" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/lilium.jpg'>">
+                <img class="img-fluid" src="img/lilium.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Aguas y Jugos</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">El vidrio no tiene rival para el envasado, la reutilización y el almacenamiento en el hogar de alimentos y bebidas. A diferencia del plástico, el vidrio también es apto para microondas y lavavajillas, ya que no se descompone a altas temperaturas. Así es como los envases de vidrio marcan todas las casillas para que usted y su familia estén sanos.</p>
+                                <h1 class="display-2 text-white animated slideInDown">Bulbos y Rizomas</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Los bulbos, al igual que los rizomas, cormos y tubérculos, son órganos subterráneos de almacenamiento de nutrientes, los cuales cumplen la función de órgano reservante. Las plantas que poseen este tipo de estructuras se denominan colectivamente plantas bulbosas.</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/aceiteV2.jpg'>">
-                <img class="img-fluid" src="img/aceite.jpg" alt="">
+
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/suculentas.jpg'>">
+                <img class="img-fluid" src="img/suculentas.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Aceites</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">La Luz es el principal enemigo de estos nutrientes del aceite de oliva. En ausencia de luz, los ácidos grasos monoinsaturados, los carotenos y polifenoles mantienen sus beneficios y capacidades antioxidantes. Sin embargo, en presencia de luz natural o artificial, se comportan como prooxidantes.</p>
+                                <h1 class="display-2 text-white animated slideInDown">Suculentas</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Las suculentas tienen un significado muy especial en el feng shui ya que según esta filosofía, estas plantas son consideradas como protectoras, purifican el ambiente y favorecen la armonía. La suculenta, resistente y agradecida, ofrece una compañía incondicional.</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/licoresV2.jpg'>">
-                <img class="img-fluid" src="img/licores.jpg" alt="">
+
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/medicinales.jpg'>">
+                <img class="img-fluid" src="img/medicinales.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Licores</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Los tonos oscuros de las botellas protegen al líquido de la luz directa y posibilitan que se conserve mejor y durante más tiempo.</p>
+                                <h1 class="display-2 text-white animated slideInDown">Condimentos y Medicinales</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Las plantas medicinales son de importancia socioeconómica para las pequeñas comunidades que las usan con prácticas ancestrales que aportan beneficios nutricionales y activos a la salud del hombre, su sistema y características que las conforman mantienen un equilibrio en la diversidad biológica y en los ecosistemas.</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/cervezasV2.jpg'>">
-                <img class="img-fluid" src="img/cervezas.jpg" alt="">
+
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/sustratos.jpg'>">
+                <img class="img-fluid" src="img/sustratos.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Cervezas</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Cuando la luz intensa solar incide de forma directa y continuada en las botellas afecta a las sustancias amargantes de la cerveza provenientes del lúpulo que están disueltas en la misma, provocando un aroma fácilmente detectable y no agradable</p>
+                                <h1 class="display-2 text-white animated slideInDown">Maceteros y Sustratos</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Los sustratos sirven para la retención agua y nutrientes, es un lugar de intercambio de gases y los nutrientes y también sirven como anclaje para el sistema radicular de la planta.</p>
                                 <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
@@ -200,6 +210,8 @@
                 </div>
             </div>
         </div>
+
+
         <!-- Carousel End -->
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-body footer wow fadeIn" data-wow-delay="0.1s">
@@ -224,6 +236,10 @@
                     <a class="btn btn-link" href="codigoS.php">Productos</a>
                     <a class="btn btn-link" href="contacto.php">Contacto</a>
                 </div>
+
+
+                <!--  AQUI el footer de las imagenes de parte baja   ----->
+
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Galeria</h5>
                         <div class="row g-2">
@@ -247,6 +263,9 @@
                             </div>
                         </div>
                     </div>
+
+                <!--  AQUI el footer de las imagenes de parte baja   ----->
+
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Si desea mas informaciones</h5>
                         <p>Por favor comunicarse directamente con la oficina principal de Viveros LUANNE</p>
