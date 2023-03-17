@@ -244,24 +244,32 @@
                         <h5 class="text-white mb-4">Galeria</h5>
                         <div class="row g-2">
                             <div class="col-4">
-                                <img class="img-fluid rounded" src="img/VinosEspumantes.jpg" alt="">
+                                <img class="img-fluid rounded" src="img/fotodeproductos.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded" src="img/VinosTranquilos.jpg" alt="">
+                                <img class="img-fluid rounded" src="img/arboles.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded" src="img/Alimentos.jpg" alt="">
+                                <img class="img-fluid rounded" src="img/jardines.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded" src="img/Aguas_jugos.jpg" alt="">
+                                <img class="img-fluid rounded" src="img/flores.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded" src="img/aceite.jpg" alt="">
+                                <img class="img-fluid rounded" src="img/lilium.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded" src="img/cervezas.jpg" alt="">
+                                <img class="img-fluid rounded" src="img/suculentas.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/medicinales.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/sustratos.jpg" alt="">
                             </div>
                         </div>
+
+
                     </div>
 
                 <!--  AQUI el footer de las imagenes de parte baja   ----->

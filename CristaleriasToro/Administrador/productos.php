@@ -39,6 +39,7 @@ include("header.php"); ?>
                         <th>Imagen</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
+                        <th>Precio Unitario</th>
                         <th>Precio Pallet</th>
                         <th>Codigo</th>
                         <th>Cantidad</th>
@@ -55,6 +56,7 @@ include("header.php"); ?>
                             <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="50"></td>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion']; ?></td>
+                            <td><?php echo $data['precio_unitario']; ?></td>
                             <td><?php echo $data['precio_pallet']; ?></td>
                             <td><?php echo $data['id']; ?></td>
                             <td><?php echo $data['cantidad']; ?></td>
@@ -115,14 +117,14 @@ include("header.php"); ?>
                             </div>
                         </div>
 
-                        <!--
+                        
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="codigo">Codigo</label>
-                                <input id="codigo" class="form-control" type="text" name="codigo" placeholder="Codigo" required>
+                                <label for="p_unitario">Precio Unitario</label>
+                                <input id="p_unitario" class="form-control" type="text" name="p_unitario" placeholder="Precio Unitario" required>
                             </div>
                         </div>
-                        -->
+                        
 
                         <div class="col-md-6">
                             <div class="form-group">
