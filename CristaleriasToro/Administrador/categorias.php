@@ -23,7 +23,8 @@ include("header.php");
                     <tr>
                         <th>Id</th>
                         <th>Nombre</th>
-                        <th></th>
+                        <th>Eliminar</th>
+                        <th>Editar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,8 +36,19 @@ include("header.php");
                             <td><?php echo $data['categoria']; ?></td>
                             <td>
                                 <form method="post" action="eliminar.php?accion=cli&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
-                                    <button class="btn btn-danger" type="submit">Eliminar</button>
+                                    <button class="btn btn-danger" type="submit">Eliminar</button> 
                                 </form>
+                            </td>
+
+                            <td>
+                                <!-- Este boton editar -->
+
+                                <form method="post" action="editar.php?accion=cli&id=<?php echo $data['id']; ?>" class="d-inline editar">
+                                    <button class="btn btn-danger" type="submit">Editar</button>
+                                </form>
+
+                                <!-- Fin boton editar -->
+                                
                             </td>
                         </tr>
                     <?php } ?>

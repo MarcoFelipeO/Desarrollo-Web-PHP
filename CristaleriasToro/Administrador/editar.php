@@ -5,6 +5,7 @@ if (isset($_GET)) {
         $id = $_GET['id'];
         if ($_GET['accion'] == 'pro') {
             $query = mysqli_query($coneccion, "DELETE FROM productos WHERE id = $id");
+          /*  $query = mysqli_query($coneccion, "UPDATE productos SET nombre = nombre, descripcion = descripcion WHERE id = $id;"); */
             if ($query) {
                 header('Location: productos.php');
             }

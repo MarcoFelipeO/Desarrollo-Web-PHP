@@ -44,24 +44,25 @@
 
                                                <!-- Fin del head y comienzo de login superior-->
 
-  <!-- Topbar Start -->
-  <div class="container-fluid bg-dark p-0">
-    <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-            <div class="h-100 d-inline-flex align-items-center me-4">
-                <small class="fa fa-map-marker-alt text-warning me-2"></small>
-                <small>Dagoberto Godoy 182, Cerrillos, Santiago de Chile</small>
+    <!-- Division de 1°era barra superior  --><!-- Division de 1°era barra superior  --><!-- Division de 1°era barra superior  -->
+
+    <div class="container-fluid bg-dark p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small class="izipizi">Luis Matte, Puente Alto, Santiago de Chile</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Atencion: Lunes a Viernes 8:30 a 20:00 hrs </small>
+                </div>
             </div>
-            <div class="h-100 d-inline-flex align-items-center">
-                <small class="far fa-clock text-warning me-2"></small>
-                <small>Atencion: Lunes a Jueves 8:30 a 16:00 hrs - Viernes de 8:30 a 15:00 hrs</small>
-            </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-            <div class="h-100 d-inline-flex align-items-center me-4">
-                <small class="fa fa-phone-alt text-warning me-2"></small>
-                <small>Telefono: (56 - 9) 4296 9687</small>
-            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>Telefono: (+56 9) 3290 9140</small>
+                </div>
             <div class="h-100 d-inline-flex align-items-center mx-n2">
                 <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
@@ -71,7 +72,10 @@
         </div>
     </div>
 </div>
-<!-- Topbar End -->
+<!-- Division de 1°era barra superior  --><!-- Division de 1°era barra superior  --><!-- Division de 1°era barra superior  -->
+<!-- Division de 1°era barra superior  --><!-- Division de 1°era barra superior  --><!-- Division de 1°era barra superior  -->
+
+
 
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
@@ -93,13 +97,6 @@
        
 </nav>
 <!-- Navbar End -->
-
-
-
-                                               <!---->
-
-
-
 
 
     <body>

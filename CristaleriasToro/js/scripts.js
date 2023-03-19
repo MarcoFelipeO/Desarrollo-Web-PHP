@@ -66,6 +66,14 @@ $(document).ready(function () {
             this.submit();
         }
     })
+
+    $('.editar').click(function(e){
+        e.preventDefault();
+        if (confirm('Esta seguro de editar?')) {
+            this.submit();
+        }
+    })
+
 });
 
 function mostrar(){

@@ -34,17 +34,17 @@
 
 <body>
     
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark p-0">
+   <!-- Topbar Start -->
+   <div class="container-fluid bg-dark p-0">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small class="izi">Luis Matte ########, Puente Alto, Santiago de Chile</small>
+                    <small class="izipizi">Luis Matte, Puente Alto, Santiago de Chile</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Atencion: Lunes a Jueves 8:30 a 16:00 hrs - Viernes de 8:30 a 15:00 hrs</small>
+                    <small>Atencion: Lunes a Viernes 8:30 a 20:00 hrs </small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">

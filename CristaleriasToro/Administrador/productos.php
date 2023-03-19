@@ -64,7 +64,7 @@ include("header.php"); ?>
                             
 
                             <td>
-                                <form method="post" action="eliminar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
+                                <form method="post" action="editar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-inline editar">
                                     <button class="btn btn-danger" type="submit">Editar</button>
                                 </form>
                             </td>
