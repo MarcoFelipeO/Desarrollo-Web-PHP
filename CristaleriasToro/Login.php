@@ -61,7 +61,7 @@
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>Telefono: (+56 9) 3290 9140</small>
+                    <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>                 
                 </div>
             <div class="h-100 d-inline-flex align-items-center mx-n2">
                 <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
@@ -79,7 +79,7 @@
 
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+    <a href="index.php" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
         <h2 class="m-0 text-black">Viveros Luanne</h2>
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -108,14 +108,14 @@
                             <h3>¿Ya tienes una cuenta?</h3>
                             <p>Inicia sesión para entrar en la página</p>
                             <button id="btn__iniciar-sesion">Iniciar Sesión</button>
-                            <a href="index.html" class="nav-item nav-link active"><button>Volver</button></a>
+                            <a href="index.php" class="nav-item nav-link active"><button>Volver</button></a>
                             
                         </div>
                         <div class="caja__trasera-register">
                             <h3>¿Aún no tienes una cuenta?</h3>
                             <p>Regístrate para que puedas iniciar sesión</p>
                             <button id="btn__registrarse">Registrarse</button>
-                            <a href="index.html" class="nav-item nav-link active"><button>Volver</button></a>
+                            <a href="index.php" class="nav-item nav-link active"><button>Volver</button></a>
                         </div>
                     </div>
     
@@ -135,6 +135,7 @@
                             <input type="text" placeholder="Nombre completo" name = "nombre_completo"> 
                             <input type="text" placeholder="Correo Electronico" name = "correo">
                             <input type="text" placeholder="Usuario"name = "usuario"> 
+                            <button>Registrarse</button>
             </main>
     
 
@@ -161,7 +162,7 @@
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-white mb-4">Enlaces Rapidos</h5>
                 <a class="btn btn-link" href="">Sobre Nosotros</a>
-                <a class="btn btn-link" href="index.html">Inicio</a>
+                <a class="btn btn-link" href="index.php">Inicio</a>
                 <a class="btn btn-link" href="">Nuestros Servicio</a>
                 <a class="btn btn-link" href="">Terminos y condiciones</a>
                 <a class="btn btn-link" href="">Soporte</a>

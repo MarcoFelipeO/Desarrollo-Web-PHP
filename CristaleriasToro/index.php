@@ -44,13 +44,13 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Atencion: Lunes a Viernes 8:30 a 20:00 hrs </small>
+                    <small class="izipizi">Atencion: Lunes a Viernes 8:30 a 20:00 hrs </small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>Telefono: (+56 9) 3290 9140</small>
+                    <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -72,7 +72,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link active">Home</a>
+                <a href="index.php" class="nav-item nav-link active">Inicio</a>
                 <a href="Quienes_Somos.php" class="nav-item nav-link">Quienes Somos</a>
                 <a href="codigoS.php" class="nav-item nav-link">Productos</a>
                 <a href="contacto.php" class="nav-item nav-link">contacto</a>

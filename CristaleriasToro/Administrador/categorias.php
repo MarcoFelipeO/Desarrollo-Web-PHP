@@ -57,6 +57,7 @@ include("header.php");
         </div>
     </div>
 </div>
+
 <div id="categorias" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -66,6 +67,7 @@ include("header.php");
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
             <div class="modal-body">
                 <form action="" method="POST" autocomplete="off">
                     <div class="form-group">
