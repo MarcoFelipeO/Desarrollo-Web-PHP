@@ -95,7 +95,7 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Contacto</h1>
+            <h1 class="display-3 text-black mb-3 animated slideInDown">Contacto</h1>
         </div>
     </div>
     <!-- Page Header End -->

@@ -77,7 +77,7 @@
                 <a href="codigoS.php" class="nav-item nav-link">Productos</a>
                 <a href="contacto.php" class="nav-item nav-link">contacto</a>
             </div>
-            <a href="Login.php" class="btn btn-warning rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicia Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="Login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicia Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->

@@ -232,35 +232,34 @@
 
 
 
-
-
-<center>
+<!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion-->
+<!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion-->
+                <center>
     
-<div class="fondo2"         
-
-
-    <td>
-        <div class="card mb-20" style="max-width: 840px;">
+<div class="fondo2">        
+<td>
+    <div class="card mb-20" style="max-width: 840px;">
       <div class="row g-20">
         <div class="col-md-20">
             <br>
             <h1> POLÍTICAS DE INTEGRIDAD </h1>
-            <h1>   EMPRESAS CRISTORO</h1>
+            <h1>  EMPRESAS CRISTORO</h1>
         </div>
+        
         <div class="col-md-0">
           <div class="card-body">
             <h5 class="card-title"></h5>
            
 
             
-<p class="uno"><strong>Empresas Cristoro</strong> es una empresa familiar
-     fundada en el año 1952 que tiene el propósito de perpetuar 
-     el legado de los valores de su fundador, cuya visión de empresa
-      fue la de una gran familia en donde accionistas y colaboradores
-       se vieran beneficiados por el éxito y prosperidad de ésta y 
-       su participación con entusiasmo en los nuevos desafíos. Los 
-       valores rectores sobre los cuáles se sostiene esta empresa son: 
-       <strong>Honestidad e Integridad; Austeridad y Sobriedad; Perseverancia y
+        <p class="uno"><strong>Empresas Cristoro</strong> es una empresa familiar
+        fundada en el año 1952 que tiene el propósito de perpetuar 
+        el legado de los valores de su fundador, cuya visión de empresa
+        fue la de una gran familia en donde accionistas y colaboradores
+        se vieran beneficiados por el éxito y prosperidad de ésta y 
+        su participación con entusiasmo en los nuevos desafíos. Los 
+        valores rectores sobre los cuáles se sostiene esta empresa son: 
+        <strong>Honestidad e Integridad; Austeridad y Sobriedad; Perseverancia y
         Compromiso; Respeto; Lealtad y Unidad Familiar.</strong><br><br>
 
         De manera de preservar  estos valores, la empresa difunde y fomenta entre sus colaboradores una 
@@ -271,10 +270,10 @@
         Para lo anterior, Empresas Cristoro ha dispuesto para todos sus trabajadores un 
         canal de denuncias en su sitio de internet oficial a través del cual pueden informar 
         de acciones o serias sospechas que atenten contra los valores que se quieren promover.
-         Asimismo, Empresas Cristoro ha establecido protocolos, reglas y procedimientos específicos
-          que permiten a las personas que intervengan en las distintas actividades o procesos,
-           programar y ejecutar sus tareas de acuerdo a la visión de la empresa. Para ello se 
-           han identificado los procedimientos de administración y auditoria que permiten a Empresas
+        Asimismo, Empresas Cristoro ha establecido protocolos, reglas y procedimientos específicos
+        que permiten a las personas que intervengan en las distintas actividades o procesos,
+        programar y ejecutar sus tareas de acuerdo a la visión de la empresa. Para ello se 
+        han identificado los procedimientos de administración y auditoria que permiten a Empresas
             Cristoro prevenir conductas no deseadas. De esta manera, Empresas Cristoro se ha 
             comprometido con el objetivo de difundir entre sus colaboradores, clientes, proveedores
              y terceras partes interesadas, la normativa interna, incorporándola en contratos de 
@@ -286,19 +285,18 @@
 
 
 
-          </div>
-        </div>
-      </div>
     </div>
-    </td>
-</div>
-</center>
+        </div>
+            </div>
+            </div>
+        </td>
+    </div>
+                        </center>
+<!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion-->
+<!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion--><!-- Ultima columna de informacion-->
 
-<!-- Ultima columna de informacion-->
 
    
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -364,9 +362,9 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Si desea mas informaciones</h5>
                     <p>Por favor comunicarse directamente con la oficina principal de Viveros Luanne</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="position-relative mx-auto" style="max-width: 1000px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Tu correo">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
                     </div>
                 </div>
             </div>

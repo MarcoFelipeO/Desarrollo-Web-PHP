@@ -81,9 +81,9 @@
                 <a href="index.php" class="nav-item nav-link">Inicio</a>
                 <a href="Quienes_Somos.php" class="nav-item nav-link">Quienes Somos</a>
                 <a href="codigoS.php" class="nav-item nav-link active">Productos</a>
-                <a href="contacto.php" class="nav-item nav-link">contacto</a>
+                <a href="contacto.php" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="Login.php" class="btn btn-warning rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicie Sesion Aqui<i class="fa fa-arrow-right ms-0"></i></a>
+            <a href="Login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-0"></i></a>
         </div>
     </nav>
     <hr>
