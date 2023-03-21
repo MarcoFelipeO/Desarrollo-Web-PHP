@@ -83,6 +83,7 @@ require_once "PHP/config.php";
             </div>
         </div>
     </header>
+
     <div class="fondocarrito">
     <section class="py-5">
         <div class="container px-4 px-lg-5">
@@ -94,7 +95,7 @@ require_once "PHP/config.php";
                                 <tr>
                                     <th><strong>#</strong></th>
                                     <th><strong>Producto</strong></th>
-                                    <th><strong>Precio</strong></th>
+                                    <th><strong>Precio Unitario</strong></th>
                                     <th><strong>Cantidad</strong></th>
                                     <th><strong>Total</strong></th>
                                 </tr>

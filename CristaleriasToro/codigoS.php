@@ -29,6 +29,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Estilo  MF-->
+    <link href="css/estilito.css" rel="stylesheet"> 
 
             <!--  NUEVAS COSAS Y APARTADO--->
 
@@ -83,41 +87,61 @@
                 <a href="codigoS.php" class="nav-item nav-link active">Productos</a>
                 <a href="contacto.php" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="Login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-0"></i></a>
+            <a href="Login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
-    <hr>
+
+
+        <!-- Header-->
+        <header class="bg-black py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <p class="display-2 fw-bolder">Catalogo de Productos</p>
+                <p class="lead fw-normal text-white text-white-50 mb-0">Todo tipo de plantas </p>
+            </div>
+        </div>
+    </header>
+
+
+<!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD -->
+
+
+
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <strong> <a href="#" class="nav-link text-war" category="all">Todos</a> </strong>
-                        
-                        <?php
-                        $query = mysqli_query($coneccion, "SELECT * FROM categorias");
-                        while ($data = mysqli_fetch_assoc($query)) { ?>
-                            <a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><strong><?php echo $data['categoria']; ?></strong></a>
-                        <?php } ?>
-                        
-                    </ul>
 
-                </div>
-            </div>
+                <div class="col-md-12">
+                 <div class="table-responsive">      
+                    <table class=" " style="width: 100%;">
+                      <thead class="thead-dark">
+                        <tr>
+                          <td>
+                           <strong> <a href="#" class="nav-link text-war" category="all">Todos</a></strong>
+                                    <?php
+                            $query = mysqli_query($coneccion, "SELECT * FROM categorias");
+                            while ($data = mysqli_fetch_assoc($query)) { ?>
+                            <a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><strong><?php echo $data['categoria']; ?></strong></a>
+                                    <?php } ?>
+                          </td>
+                        </tr>   
+                 
+                      </thead> 
+                    </table>      
+                 </div>
+               </div>
         </nav>
     </div>
-    <!-- Header-->
-    <header class="bg-black py-5">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
-                <p class="display-2 fw-bolder">Catalogo de Productos</p>
-                <p class="lead fw-normal text-white-50 mb-0">Todo tipo de plantas </p>
-            </div>
-        </div>
-    </header>
+    <!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD -->
+
+
+
+    
+                            <!--- TRAE EL CUADRO CON LA INFORMACION DESDE LA BDD--->
+
     <section class="py-5">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
