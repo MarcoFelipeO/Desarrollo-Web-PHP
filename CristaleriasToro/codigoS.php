@@ -95,13 +95,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <a href="#" class="nav-link text-war" category="all">Todos</a>
+                        <strong> <a href="#" class="nav-link text-war" category="all">Todos</a> </strong>
+                        
                         <?php
                         $query = mysqli_query($coneccion, "SELECT * FROM categorias");
                         while ($data = mysqli_fetch_assoc($query)) { ?>
-                            <a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><?php echo $data['categoria']; ?></a>
+                            <a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><strong><?php echo $data['categoria']; ?></strong></a>
                         <?php } ?>
+                        
                     </ul>
+
                 </div>
             </div>
         </nav>
@@ -111,7 +114,7 @@
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <p class="display-2 fw-bolder">Catalogo de Productos</p>
-                <p class="lead fw-normal text-white-50 mb-0">Todo tipo de plantas :)</p>
+                <p class="lead fw-normal text-white-50 mb-0">Todo tipo de plantas </p>
             </div>
         </div>
     </header>
@@ -152,7 +155,7 @@
     <!-- Footer-->
     <footer class="py-5 bg-black">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Viveros LUANNE</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Viveros Luanne 2023</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->

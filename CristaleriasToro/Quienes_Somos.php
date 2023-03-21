@@ -89,60 +89,49 @@
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/BotellasF.jpg'>">
-                <img class="img-fluid" src="img/BotellasF.jpg" alt="">
+
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/lilium.jpg'>">
+                <img class="img-fluid" src="img/lilium.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">¿Quienes Somos?</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Cristalerías Toro es una empresa chilena y familiar, con más de 60 años de trayectoria en la producción y comercialización de envases de vidrio, que se ha encargado de transmitir de generación en generación el compromiso con nuestros Clientes, con el Medio Ambiente y con la Comunidad.</p>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Nuestra inigualable flexibilidad, junto con la inversión en nuevas tecnologías, nos han ayudado a ser parte de exitosos proyectos en distintos segmentos de la Industria de Alimentos (Vinos, Espumantes, Licores, Cervezas, Gaseosas, Aguas, Jugos, Aceites, etc.), Cosmética, Farmacéutica y Menaje.</p>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Actualmente abastecemos a Clientes Nacionales y Extranjeros, Grandes y Pequeños, con nuestra filosofía de crear y mantener una cálida y estrecha relación con todos nuestros Clientes.</p>   
+                                <h1 class="display-2 text-white animated slideInDown">Bulbos y Rizomas</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Los bulbos, al igual que los rizomas, cormos y tubérculos, son órganos subterráneos de almacenamiento de nutrientes, los cuales cumplen la función de órgano reservante. Las plantas que poseen este tipo de estructuras se denominan colectivamente plantas bulbosas.</p>
+                                <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Antiguas1.jpg'>">
-                <img class="img-fluid" src="img/Antiguas1.jpg" alt="">
+
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/suculentas.jpg'>">
+                <img class="img-fluid" src="img/suculentas.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Nuestra Historia</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 1952 Después de 4 años trabajando en la reventa de envases, el 19 de Mayo de 1952 nace la primera Garrafa de producción propia, dando inicio a Cristalerías Toro, ubicada en calle Ecuador Nº4646, Estación Central. Para la confección de los canastillos de mimbre de las Garrafas, se trabajó con varios  talleres, incluido uno en la Penitenciaría, dando de esta manera un trabajo honrado a los reclusos.</p>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 1959 Se traslada la empresa a la actual ubicación, en calle Dagoberto Godoy Nº 145, Cerrillos.</p>
+                                <h1 class="display-2 text-white animated slideInDown">Suculentas</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Las suculentas tienen un significado muy especial en el feng shui ya que según esta filosofía, estas plantas son consideradas como protectoras, purifican el ambiente y favorecen la armonía. La suculenta, resistente y agradecida, ofrece una compañía incondicional.</p>
+                                <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Antiguas2.jpg'>">
-                <img class="img-fluid" src="img/Antiguas2.jpg" alt="">
+
+
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/medicinales.jpg'>">
+                <img class="img-fluid" src="img/medicinales.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Siguientes años</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 1968 Se inicia la producción automática de Frascos y Botellas, y se pone en marcha la sección Vidrio Neutro, produciendo Ampollas y Frascos Pildoreros.</p>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 1985 Con una mayor estabilidad económica en el país, se logra dar un nuevo impulso a la empresa con la construcción de hornos de última generación y la importación de nuevas máquinas formadoras.</p>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 1996 Se compran los terrenos en Camino a Lonquén, Maipú, donde se instalará la nueva Bodega de Producto Terminado y Centro de Distribución.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Antiguas4.jpg'>">
-                <img class="img-fluid" src="img/Antiguas4.jpg" alt="">
-                <div class="owl-carousel-inner">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown">Años 2000 en adelante</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 2005 La empresa obtiene la Certificación ISO 9001- 2000 "Gestión de Calidad – Control de Calidad", consolidando la producción en calidad, eficiencia y tecnología, con estándares internacionales. </p>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 2007 Manteniendo su carácter visionario del futuro y su apego al medioambiente, la empresa instala el primer Parque Eólico de empresa manufacturera, para la generación de electricidad y autoabastecimiento de sus plantas productivas, en la comuna de Lebu, Octava Región.</p>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Año 2014 La empresa instala la Planta de Reciclaje más moderna de Latinoamérica, con sistemas de última tecnología para la separación de colores de vidrio y contaminantes, en sus terrenos de Camino a Lonquén, Maipú.</p>
+                                <h1 class="display-2 text-white animated slideInDown">Condimentos y Medicinales</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Las plantas medicinales son de importancia socioeconómica para las pequeñas comunidades que las usan con prácticas ancestrales que aportan beneficios nutricionales y activos a la salud del hombre, su sistema y características que las conforman mantienen un equilibrio en la diversidad biológica y en los ecosistemas.</p>
+                                <a href="codigoS.php" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Ver mas</a>
                             </div>
                         </div>
                     </div>
@@ -316,10 +305,11 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Direccion</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Dagoberto Godoy 182, Cerrillos, Santiago de Chile</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(56 - 2) 2 437 4500</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>CristaleriasToro@gmail.com</p>
-                    <div class="d-flex pt-2">
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Luis Matte ##, Puente Alto, Santiago de Chile</p>
+                        <small class="fa fa-phone-alt text-primary me-2"></small>
+                        <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>
+                        <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>mafeorellana09@gmail.com</p>
+                        <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
@@ -329,38 +319,51 @@
                 
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Enlaces Rapidos</h5>
-                    <a class="btn btn-link" href="">Sobre Nosotros</a>
-                    <a class="btn btn-link" href="index.html">Inicio</a>
-                    <a class="btn btn-link" href="">Nuestros Servicio</a>
-                    <a class="btn btn-link" href="">Terminos y condiciones</a>
-                    <a class="btn btn-link" href="">Soporte</a>
+                    <a class="btn btn-link" href="Quienes_Somos.php">Sobre Nosotros</a>
+                    <a class="btn btn-link" href="index.php">Inicio</a>
+                    <a class="btn btn-link" href="codigoS.php">Productos Disponibles</a>
+                    <a class="btn btn-link" href="contacto.php">Contactanos</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Galeria</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/VinosEspumantes.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/VinosTranquilos.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/Alimentos.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/Aguas_jugos.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/aceite.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/cervezas.jpg" alt="">
+
+
+                 <!--  AQUI el footer de las imagenes de parte baja   ----->
+
+                 <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Galeria</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/fotodeproductos.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/arboles.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/jardines.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/flores.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/lilium.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/suculentas.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/medicinales.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/sustratos.jpg" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
+
+                <!--  AQUI el footer de las imagenes de parte baja   ----->
+
+
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Si desea mas informaciones</h5>
-                    <p>Por favor comunicarse directamente con la oficina principal de Cristalerias Toro</p>
+                    <p>Por favor comunicarse directamente con la oficina principal de Viveros Luanne</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -372,11 +375,11 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Cristalerias Toro</a>, Todo los derechos Reservados.
+                        &copy; <a href="#">Viveros Luanne 2023</a>, Todo los derechos Reservados.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Hecho en <a href="">Codigo HTML</a>
+                        Hecho en <a href="">Codigo HTML </a>
                     </div>
                 </div>
             </div>
