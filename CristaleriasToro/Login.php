@@ -9,7 +9,7 @@
         
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <meta charset="utf-8">
-        <title>Cristalerias Toro</title>
+        <title>Viveros LUANNE</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -148,9 +148,11 @@
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-white mb-4">Direccion</h5>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Dagoberto Godoy 182, Cerrillos, Santiago de Chile</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(56 - 2) 2 437 4500</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>CristaleriasToro@gmail.com</p>
+                <small class="izipizi">Luis Matte, Puente Alto, Santiago de Chile</small>
+                <br>
+                <small class="fa fa-phone-alt text-primary me-2"></small>
+                <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>mafeorellana09@gmail.com</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -167,32 +169,45 @@
                 <a class="btn btn-link" href="">Terminos y condiciones</a>
                 <a class="btn btn-link" href="">Soporte</a>
             </div>
+            <!--  AQUI el footer de las imagenes de parte baja   ----->
+
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">Galeria</h5>
-                <div class="row g-2">
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/VinosEspumantes.jpg" alt="">
+                        <h5 class="text-white mb-4">Galeria</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/fotodeproductos.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/arboles.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/jardines.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/flores.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/lilium.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/suculentas.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/medicinales.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded" src="img/sustratos.jpg" alt="">
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/VinosTranquilos.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/Alimentos.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/Aguas_jugos.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/aceite.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/cervezas.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+
+
+
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-white mb-4">Si desea mas informaciones</h5>
-                <p>Por favor comunicarse directamente con la oficina principal de Cristalerias Toro</p>
+                <p>Por favor comunicarse directamente con la oficina principal de Viveros Luanne</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
                     <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                     <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -204,11 +219,11 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Cristalerias Toro</a>, Todo los derechos Reservados.
+                    &copy; <a href="#">Viveros Luanne 2023</a>, Todos los derechos Reservados.
                 </div>
-                <div class="col-md-6 text-center text-md-end">
+                <!--<div class="col-md-6 text-center text-md-end"> -->
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Hecho en <a href="">Codigo HTML</a>
+                  <!--  Hecho en <a href="">Codigo HTML</a> -->
                 </div>
             </div>
         </div>

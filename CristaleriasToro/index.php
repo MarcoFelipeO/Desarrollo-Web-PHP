@@ -222,9 +222,10 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Direccion</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Luis Matte ########, Puente Alto, Santiago de Chile</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+56 9) 3290 9140</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>mafeorellana09@gmail.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Luis Matte ########, Puente Alto, Santiago de Chile</p>
+                        <small class="fa fa-phone-alt text-primary me-2"></small>
+                        <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>
+                        <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>mafeorellana09@gmail.com</p>
                         <div class="d-flex pt-2">
                         <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
