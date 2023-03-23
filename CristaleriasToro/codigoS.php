@@ -92,15 +92,16 @@
     </nav>
 
 
-        <!-- Header-->
+        
         <header class="bg-black py-5">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
-                <p class="display-2 fw-bolder">Catalogo de Productos</p>
-                <p class="lead fw-normal text-white text-white-50 mb-0">Todo tipo de plantas </p>
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <p class="display-2 fw-bolder">Catalogo de Productos</p>
+                    <p class="lead fw-normal text-white  mb-0"> <strong> Elige tus plantas favoritas </strong> </p>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+
 
 
 <!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD -->
@@ -120,7 +121,7 @@
             <thead class="thead-dark">
               <tr>
                 <td>
-                  <strong><a href="#" class="nav-link text-war" category="all">Todos</a></strong>
+                  <strong><a href="#" class="nav-link text-war text-black" category="all">Todos</a></strong>
                 </td>
                 <td>
                   <table>
