@@ -107,34 +107,41 @@
 
 
 
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <div class="col-md-12">
-                 <div class="table-responsive">      
-                    <table class=" " style="width: 100%;">
-                      <thead class="thead-dark">
-                        <tr>
-                          <td>
-                           <strong> <a href="#" class="nav-link text-war" category="all">Todos</a></strong>
-                                    <?php
-                            $query = mysqli_query($coneccion, "SELECT * FROM categorias");
-                            while ($data = mysqli_fetch_assoc($query)) { ?>
-                            <a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><strong><?php echo $data['categoria']; ?></strong></a>
-                                    <?php } ?>
-                          </td>
-                        </tr>   
-                 
-                      </thead> 
-                    </table>      
-                 </div>
-               </div>
-        </nav>
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table style="width: 100%;">
+            <thead class="thead-dark">
+              <tr>
+                <td>
+                  <strong><a href="#" class="nav-link text-war" category="all">Todos</a></strong>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <?php
+                      $query = mysqli_query($coneccion, "SELECT * FROM categorias");
+                      while ($data = mysqli_fetch_assoc($query)) { ?>
+                        <td><a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><strong><?php echo $data['categoria']; ?></strong></a></td>
+                      <?php } ?>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
     </div>
+  </nav>
+</div>
+
     <!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD -->
 
 
