@@ -51,17 +51,17 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Luis Matte ########, Puente Alto, Santiago de Chile</small>
+                    <small>Luis Matte, Puente Alto, Santiago de Chile</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Atencion: Lunes a Jueves 8:30 a 16:00 hrs - Viernes de 8:30 a 15:00 hrs</small>
+                    <small class="izipizi">Atencion: Lunes a Viernes 8:30 a 20:00 hrs </small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>Telefono: (+56 9) 3290 9140</small>
+                    <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -75,7 +75,7 @@
 
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.php" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0 texto-éxito">Viveros LUANNE</h2>
+            <h2 class="m-0 texto-éxito">Viveros Luanne</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -105,9 +105,6 @@
 
 
 <!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD -->
-
-
-
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
@@ -142,14 +139,12 @@
     </div>
   </nav>
 </div>
-
-    <!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD -->
+<!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD --><!--- AQUI TRAEMOS LA CATEGORIA DESDE LA BDD -->
 
 
 
     
-                            <!--- TRAE EL CUADRO CON LA INFORMACION DESDE LA BDD--->
-
+<!--- TRAE EL CUADRO/card CON LA INFORMACION DESDE LA BDD--->
     <section class="py-5">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -184,17 +179,31 @@
             </div>
         </div>
     </section>
+<!--- TRAE EL CUADRO/card CON LA INFORMACION DESDE LA BDD--->
+
+
+
     <!-- Footer-->
     <footer class="py-5 bg-black">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Viveros Luanne 2023</p>
         </div>
     </footer>
+    <!-- Footer-->
+
+
+
+
+<!--- SCRIPT COLOCAR EL SCRIPT ---><!--- SCRIPT COLOCAR EL SCRIPT --->
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>
+<!--- SCRIPT COLOCAR EL SCRIPT ---><!--- SCRIPT COLOCAR EL SCRIPT --->
+
+
 </body>
 
 </html>
