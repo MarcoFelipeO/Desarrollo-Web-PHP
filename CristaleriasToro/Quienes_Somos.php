@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cristalerias Toro</title>
+    <title>Viveros Luanne 2023</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -41,17 +41,17 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Dagoberto Godoy 182, Cerrillos, Santiago de Chile</small>
+                    <small class="izipizi">Luis Matte, Puente Alto, Santiago de Chile</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Atencion: Lunes a Jueves 8:30 a 16:00 hrs - Viernes de 8:30 a 15:00 hrs</small>
+                    <small class="izipizi">Atencion: Lunes a Viernes 8:30 a 20:00 hrs </small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>Telefono: (+56 9) 3290 9140</small>
+                    <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
@@ -151,19 +151,17 @@
         <div class="card mb-20" style="max-width: 840px;">
       <div class="row g-20">
         <div class="col-md-20">
-          <img src="img/logo.jpg" text-align="right" class="img-fluid rounded-start" >
+          <img src="img/medicinales.jpg" text-align="right" class="img-fluid rounded-start" >
         </div>
         <div class="col-md-0">
           <div class="card-body">
             <h5 class="card-title"></h5>
-<p class="uno"><strong>Cristalerías Toro</strong> es una empresa chilena y familiar, con más de 60 años de trayectoria
-     en la producción y comercialización de envases de vidrio, que se ha encargado de transmitir de generación 
-     en generación el compromiso con nuestros Clientes, con el Medio Ambiente y con la Comunidad.<br>
-    Nuestra inigualable flexibilidad, junto con la inversión en nuevas tecnologías, nos han ayudado a ser parte 
-    de exitosos proyectos en distintos segmentos de la Industria de Alimentos (Vinos, Espumantes, Licores, Cervezas, 
-    Gaseosas, Aguas, Jugos, Aceites, etc.), Cosmética, Farmacéutica y Menaje.<br>
-    Actualmente abastecemos a Clientes Nacionales y Extranjeros, Grandes y Pequeños, con nuestra filosofía de crear 
-    y mantener una cálida y estrecha relación con todos nuestros Clientes.<img src="img/foto2.png" width="95%"></p>
+<p class="uno" text-center><strong>Viveros Luanne 2023</strong> 
+
+<!--- Colocar texto -->
+
+    
+    <img src="img/rosas.jpg" width="95%"></p>
           </div>
         </div>
       </div>
@@ -188,15 +186,11 @@
           <div class="card-body">
             <h5 class="card-title"></h5>
            
-<p class="uno"><strong>CRISTALERÍAS TORO S.p.A</strong>, es una empresa dedicada a la fabricación
-     y comercialización de envases de vidrio para 
-    el uso en alimentos, licores, vinos, gaseosas y cervezas, farmacéuticos, cosmética, perfumería, 
-    menaje y otros productos que se
-     implementen en el futuro.<br>
-     <strong>En CRISTALERÍAS TORO</strong> nos caracterizamos por fabricar productos de alta calidad y 
-     seguridad, buscando satisfacer las necesidades
-     y expectativas de nuestros clientes a través de la implementación de un <strong>Sistema de Gestión 
-        de Calidad y Seguridad.</strong></p>
+<p class="uno"><strong>Viveros Luanne 2023</strong>
+
+<!---- Colocar texto ---->
+
+</p>
 
      <br>
 
@@ -205,7 +199,7 @@
 <br>
 
 
-<p class="uno">- Fabricar envases de vidrio con un enfoque hacia los clientes en la Calidad y Seguridad.<br>
+<p class="uno">- Un enfoque hacia los clientes en la Calidad y Seguridad.<br>
 <p class="uno">- Cumplir con los requisitos del Sistema de Gestión de Calidad y Seguridad, en su mejoramiento continuo 
     y en la eficiencia de nuestros procesos.<br>
 <p class="uno">- Cumplir con todas las normas y requerimientos legales aplicables a la organización y con los otros
@@ -243,7 +237,7 @@
         <div class="col-md-20">
             <br>
             <h1> POLÍTICAS DE INTEGRIDAD </h1>
-            <h1>  EMPRESAS CRISTORO</h1>
+            <h1> Viveros Luanne 2023</h1>
         </div>
         
         <div class="col-md-0">
@@ -252,35 +246,14 @@
            
 
             
-        <p class="uno"><strong>Empresas Cristoro</strong> es una empresa familiar
-        fundada en el año 1952 que tiene el propósito de perpetuar 
-        el legado de los valores de su fundador, cuya visión de empresa
-        fue la de una gran familia en donde accionistas y colaboradores
-        se vieran beneficiados por el éxito y prosperidad de ésta y 
-        su participación con entusiasmo en los nuevos desafíos. Los 
-        valores rectores sobre los cuáles se sostiene esta empresa son: 
-        <strong>Honestidad e Integridad; Austeridad y Sobriedad; Perseverancia y
-        Compromiso; Respeto; Lealtad y Unidad Familiar.</strong><br><br>
-
-        De manera de preservar  estos valores, la empresa difunde y fomenta entre sus colaboradores una 
-        cultura de transparencia y probidad, rechazando toda conducta que atente 
-        contra estos valores, aún bajo pretexto de estar cumpliendo instrucciones 
-        superiores o que el resultado de la acción fuere en beneficio de La Compañía.<br><br>
-
-        Para lo anterior, Empresas Cristoro ha dispuesto para todos sus trabajadores un 
-        canal de denuncias en su sitio de internet oficial a través del cual pueden informar 
-        de acciones o serias sospechas que atenten contra los valores que se quieren promover.
-        Asimismo, Empresas Cristoro ha establecido protocolos, reglas y procedimientos específicos
-        que permiten a las personas que intervengan en las distintas actividades o procesos,
-        programar y ejecutar sus tareas de acuerdo a la visión de la empresa. Para ello se 
-        han identificado los procedimientos de administración y auditoria que permiten a Empresas
-            Cristoro prevenir conductas no deseadas. De esta manera, Empresas Cristoro se ha 
-            comprometido con el objetivo de difundir entre sus colaboradores, clientes, proveedores
-             y terceras partes interesadas, la normativa interna, incorporándola en contratos de 
-             trabajo, con clientes y proveedores.</p><br><br>
+        <p class="uno"><strong>Viveros Luanne 2023</strong> 
+    
+            <!---- El texto aqui--->
+    
+        </p><br><br>
 
 
-             <center><h5 class="izi"> DIRECTORIO DE EMPRESAS CRISTORO</h5></center>
+             <center><h5 class="izi"> VIveros Luanne 2023</h5></center>
 
 
 
