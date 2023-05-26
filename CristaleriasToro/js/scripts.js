@@ -17,13 +17,13 @@ $(document).ready(function () {
         function ocultar() {
             $('.productos').hide();
         }
-        setTimeout(ocultar, 400);
+        setTimeout(ocultar, 100);
 
         function mostrar() {
             $('.productos[category="' + productos + '"]').show();
             $('.productos[category="' + productos + '"]').css('transform', 'scale(1)');
         }
-        setTimeout(mostrar, 400);
+        setTimeout(mostrar, 100);
     });
 
     $('.nav-link[category="all"]').click(function () {

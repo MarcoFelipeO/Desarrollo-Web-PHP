@@ -1,6 +1,6 @@
 <?php
 
-$coneccion = new mysqli("localhost", "root", "", "cristaleria");
+$coneccion = new mysqli("localhost", "root", "", "vivero");
 
 /*
 if ($mysqli){

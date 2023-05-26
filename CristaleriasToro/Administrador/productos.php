@@ -8,6 +8,7 @@ if (isset($_POST)) {
         $nombre = $_POST['nombre'];
         $cantidad = $_POST['cantidad'];
         $descripcion = $_POST['descripcion'];
+        $p_unitario = $_POST['p_unitario'];
         $p_pallet = $_POST['p_pallet'];
         $codigo = $_POST['codigo'];
         $categoria = $_POST['categoria'];
@@ -17,7 +18,7 @@ if (isset($_POST)) {
         $fecha = date("YmdHis");
         $foto = $fecha . ".jpg";
         $destino = "../img/" . $foto;
-        $query = mysqli_query($coneccion, "INSERT INTO productos(nombre, descripcion, precio_pallet, codigo, cantidad, imagen, id_categoria) VALUES ('$nombre', '$descripcion', '$p_pallet', '$codigo', $cantidad, '$foto', $categoria)");
+        $query = mysqli_query($coneccion, "INSERT INTO productos(nombre, descripcion, precio_unitario, precio_pallet, codigo, cantidad, imagen, id_categoria) VALUES ('$nombre', '$descripcion','$p_unitario', '$p_pallet', '$codigo', $cantidad, '$foto', $categoria)");
         if ($query) {
             if (move_uploaded_file($tmpname, $destino)) {
                 header('Location: productos.php');
@@ -55,16 +56,16 @@ include("header.php"); ?>
                         <tr>
                             <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="50"></td>
                             <td><?php echo $data['nombre']; ?></td>
-                            <td><?php echo $data['descripcion']; ?></td>
+                            <td><?php echo $data['descripcion'];  ?></td>
                             <td><?php echo $data['precio_unitario']; ?></td>
                             <td><?php echo $data['precio_pallet']; ?></td>
-                            <td><?php echo $data['id']; ?></td>
+                            <td><?php echo $data['codigo']; ?></td>
                             <td><?php echo $data['cantidad']; ?></td>
                             <td><?php echo $data['categoria']; ?></td>
                             
 
                             <td>
-                                <form method="post" action="editar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-inline editar">
+                                <form method="post" action="editar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-editar editar">
                                     <button class="btn btn-danger" type="submit">Editar</button>
                                 </form>
                             </td>
@@ -110,18 +111,18 @@ include("header.php"); ?>
                                 <textarea id="descripcion" class="form-control" name="descripcion" placeholder="Descripción" rows="3" required></textarea>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="p_pallet">Precio Pallet</label>
-                                <input id="p_pallet" class="form-control" type="text" name="p_pallet" placeholder="Precio Pallet" required>
-                            </div>
-                        </div>
 
-                        
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="p_unitario">Precio Unitario</label>
                                 <input id="p_unitario" class="form-control" type="text" name="p_unitario" placeholder="Precio Unitario" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="p_pallet">Precio Pallet</label>
+                                <input id="p_pallet" class="form-control" type="text" name="p_pallet" placeholder="Precio Pallet" required>
                             </div>
                         </div>
                         

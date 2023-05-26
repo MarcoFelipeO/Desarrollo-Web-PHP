@@ -153,7 +153,7 @@ require_once "PHP/config.php";
                             <tr>
                                 <td>${element.id}</td>
                                 <td>${element.nombre}</td>
-                                <td>${element.precio}</td>
+                                <td>${element.p_unitario}</td>
                                 <td>${element.cantidad}</td>
                                 <td>${element.precio}</td>
                             </tr>
