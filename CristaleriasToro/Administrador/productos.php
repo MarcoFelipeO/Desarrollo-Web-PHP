@@ -57,8 +57,8 @@ include("header.php"); ?>
                             <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="50"></td>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion'];  ?></td>
-                            <td><?php echo $data['precio_unitario']; ?></td>
-                            <td><?php echo $data['precio_pallet']; ?></td>
+                            <td>$<?php echo $data['precio_unitario']; ?></td>
+                            <td>$<?php echo $data['precio_pallet']; ?></td>
                             <td><?php echo $data['codigo']; ?></td>
                             <td><?php echo $data['cantidad']; ?></td>
                             <td><?php echo $data['categoria']; ?></td>
