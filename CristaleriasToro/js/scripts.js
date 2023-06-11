@@ -67,12 +67,19 @@ $(document).ready(function () {
         }
     })
 
+    //EDITAR PRODUCTOS
+      //EDITAR PRODUCTOS
+        //EDITAR PRODUCTOS
     $('.editar').click(function(e){
         e.preventDefault();
-        if (confirm('Esta seguro de editar?')) {
-            this.submit();
+        if (confirm('¿Estás seguro de editar?')) {
+            var productoId = $(this).data('id');
+            $('#id').val(productoId);
+            $('#editarcosas').modal('show');
         }
-    })
+    });
+      //EDITAR PRODUCTOS
+        //EDITAR PRODUCTOS
 
 });
 

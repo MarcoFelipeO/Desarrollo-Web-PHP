@@ -50,7 +50,7 @@ require_once "PHP/config.php";
          
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/foto1.png"></a>
+                <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/colo.jpg"></a>
                 </div>
                 <div class="container-fluid">      
                 <a class="navbar-brand" href="index.php"> <strong>Inicio</strong></a> 
@@ -153,9 +153,9 @@ require_once "PHP/config.php";
                             <tr>
                                 <td>${element.id}</td>
                                 <td>${element.nombre}</td>
-                                <td>${element.p_unitario}</td>
-                                <td>${element.cantidad}</td>
-                                <td>${element.precio}</td>
+                                <td>${element.precio_unitario}</td>
+                                <td>${element.cantidad_Carro}</td>
+
                             </tr>
                             `;
                             });

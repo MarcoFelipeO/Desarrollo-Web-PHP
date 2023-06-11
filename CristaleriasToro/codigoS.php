@@ -164,7 +164,7 @@
                                         <h5 class="fw-bolder"><?php echo $data['nombre'] ?></h5>
                                         <p><?php echo $data['descripcion']; ?></p>
                                         <!-- Product price-->
-                                        <span class="">$<?php echo $data['precio_unitario'] ?></span>
+                                        <span class="">$<?php echo number_format($data['precio_unitario'], 0, ',', '.'); ?></span>
                                     </div>
                                 </div>
                                 <!-- Product actions-->

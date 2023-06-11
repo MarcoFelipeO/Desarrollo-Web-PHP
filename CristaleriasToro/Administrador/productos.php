@@ -27,6 +27,7 @@ if (isset($_POST)) {
     }
 }
 include("header.php"); ?>
+
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Productos</h1>
     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="abrirProducto"><i class="fas fa-plus fa-sm text-white-50"></i> Nuevo</a>
@@ -54,21 +55,21 @@ include("header.php"); ?>
                     $query = mysqli_query($coneccion, "SELECT p.*, c.id AS id_cat, c.categoria FROM productos p INNER JOIN categorias c ON c.id = p.id_categoria ORDER BY p.id DESC");
                     while ($data = mysqli_fetch_assoc($query)) { ?>
                         <tr>
-                            <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="50"></td>
+                            <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="350"></td>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion'];  ?></td>
                             <td>$<?php echo $data['precio_unitario']; ?></td>
-                            <td>$<?php echo $data['precio_pallet']; ?></td>
+                            <td>$<?php echo number_format($data['precio_pallet'], 0, ',', '.'); ?></td>
                             <td><?php echo $data['codigo']; ?></td>
                             <td><?php echo $data['cantidad']; ?></td>
                             <td><?php echo $data['categoria']; ?></td>
                             
-
                             <td>
                                 <form method="post" action="editar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-editar editar">
                                     <button class="btn btn-danger" type="submit">Editar</button>
                                 </form>
                             </td>
+
                             <td>
                                 <form method="post" action="eliminar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
                                     <button class="btn btn-danger" type="submit">Eliminar</button>
@@ -81,6 +82,9 @@ include("header.php"); ?>
         </div>
     </div>
 </div>
+<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
+
 <div id="productos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -90,6 +94,7 @@ include("header.php"); ?>
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
             <div class="modal-body">
                 <form action="" method="POST" enctype="multipart/form-data" autocomplete="off">
                     <div class="row">
@@ -109,6 +114,13 @@ include("header.php"); ?>
                             <div class="form-group">
                                 <label for="descripcion">Descripción</label>
                                 <textarea id="descripcion" class="form-control" name="descripcion" placeholder="Descripción" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="codigo">Codigo</label>
+                                <input id="codigo" class="form-control" type="text" name="codigo" placeholder="Codigo" required>
                             </div>
                         </div>
 
@@ -152,4 +164,92 @@ include("header.php"); ?>
         </div>
     </div>
 </div>
+<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
+<div id="editarcosas" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-gradient-primary text-white">
+                <h5 class="modal-title" id="title">Edite Aqui sus Productos</h5>
+                <?php
+                 $id = $_GET['id']; 
+                 $productos = mysqli_query($coneccion, "select * from productos");
+                ?>
+                <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form action="" method="POST" enctype="multipart/form-data" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cantidad">Cantidad</label>
+                                <input id="cantidad" class="form-control" type="text" name="cantidad" placeholder="Cantidad" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea id="descripcion" class="form-control" name="descripcion" placeholder="Descripción" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="codigo">Codigo</label>
+                                <input id="codigo" class="form-control" type="text" name="codigo" placeholder="Codigo" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="p_unitario">Precio Unitario</label>
+                                <input id="p_unitario" class="form-control" type="text" name="p_unitario" placeholder="Precio Unitario" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="p_pallet">Precio Pallet</label>
+                                <input id="p_pallet" class="form-control" type="text" name="p_pallet" placeholder="Precio Pallet" required>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="categoria">Categoria</label>
+                                <select id="categoria" class="form-control" name="categoria" required>
+                                    <?php
+                                    $categorias = mysqli_query($coneccion, "SELECT * FROM categorias");
+                                    foreach ($categorias as $cat) { ?>
+                                        <option value="<?php echo $cat['id']; ?>"><?php echo $cat['categoria']; ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="imagen">Foto</label>
+                                <input type="file" class="form-control" name="foto" required>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="btn btn-primary" type="submit">Actualizar datos</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php include("footer.php"); ?>
