@@ -50,7 +50,7 @@ require_once "PHP/config.php";
          
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/colo.jpg"></a>
+                <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/colo.jpg" height="50"></a>
                 </div>
                 <div class="container-fluid">      
                 <a class="navbar-brand" href="index.php"> <strong>Inicio</strong></a> 
@@ -58,7 +58,7 @@ require_once "PHP/config.php";
                 <a class="navbar-brand" href=" codigoS.php"><strong>Productos</strong></a>
                 <a class="navbar-brand" href="contacto.php "><strong>Contactanos</strong></a>
             </div>
-            <a href="Login.php" class="btn btn-warning rounded-5 py-0 px-lg-5 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-2"></i></a>
+            <a href="Login.php" class="btn btn-warning rounded-0 py-0 px-lg-5 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-2"></i></a>
                 <div>
                     <div class="h-500 d-inline-flex align-items-center mx-n20">
                         <a class="btn btn-square btn-link rounded-20 border-20 border-end border-secondary" href="https://web.facebook.com/pages/Cristaler%C3%ADas-Toro/197906423586073/"><i class="fab fa-facebook-f"></i></a>
@@ -93,11 +93,11 @@ require_once "PHP/config.php";
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th><strong>#</strong></th>
-                                    <th><strong>Producto</strong></th>
-                                    <th><strong>Precio Unitario</strong></th>
-                                    <th><strong>Cantidad</strong></th>
-                                    <th><strong>Total</strong></th>
+                                    <th><strong>Nombre Producto</strong></th>
+                                    <th><strong>Precios</strong></th>
+                                    <th><strong>Unidades</strong></th>
+                                    <th><strong>Cantidad a pagar</strong></th>
+                                    <!--<th><strong>Total</strong></th>-->
                                 </tr>
                             </thead>
                             <tbody id="tblCarrito">
@@ -133,42 +133,61 @@ require_once "PHP/config.php";
         mostrarCarrito();
 
         function mostrarCarrito() {
-            if (localStorage.getItem("productos") != null) {
-                let array = JSON.parse(localStorage.getItem('productos'));
-                if (array.length > 0) {
-                    $.ajax({
-                        url: 'ajax.php',
-                        type: 'POST',
-                        async: true,
-                        data: {
-                            action: 'buscar',
-                            data: array
-                        },
-                        success: function(response) {
-                            console.log(response);
-                            const res = JSON.parse(response);
-                            let html = '';
-                            res.datos.forEach(element => {
-                                html += `
-                            <tr>
-                                <td></td> 
-                                <td>${element.nombre}</td>
-                                <td>${element.precio_unitario}</td>
-                                <td>${element.cantidad_Carro}</td>
+  if (localStorage.getItem("productos") != null) {
+    let array = JSON.parse(localStorage.getItem('productos'));
+    if (array.length > 0) {
+      $.ajax({
+        url: 'ajax.php',
+        type: 'POST',
+        async: true,
+        data: {
+          action: 'buscar',
+          data: array
+        },
+        success: function(response) {
+          console.log(response);
+          const res = JSON.parse(response);
+          let productos = {}; // Objeto para almacenar los productos y sus cantidades acumuladas
+          let totalPagar = 0; // Variable para calcular el precio total a pagar
 
-                            </tr>
-                            `;
-                            });
-                            $('#tblCarrito').html(html);
-                            $('#total_pagar').text(res.total.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' }));
-                        },
-                        error: function(error) {
-                            console.log(error);
-                        }
-                    });
-                }
+          res.datos.forEach(element => {
+            const key = element.nombre + element.precio_unitario; // Clave única para identificar cada producto
+            if (productos[key]) {
+              productos[key].cantidad += 1;
+            } else {
+              productos[key] = {
+                nombre: element.nombre,
+                precio_unitario: parseFloat(element.precio_unitario),
+                cantidad: 1
+              };
             }
+            totalPagar += parseFloat(element.precio_unitario); // Sumar el precio unitario al total a pagar
+          });
+
+          let html = '';
+          for (const key in productos) {
+            const producto = productos[key];
+            let cantidad = producto.cantidad > 1 ? `x${producto.cantidad}` : '';
+            html += `
+              <tr>
+                <td>${producto.nombre}</td>
+                <td>$${producto.precio_unitario.toFixed(3)}</td>
+                <td>${cantidad}</td>
+                <td>$${(producto.precio_unitario * producto.cantidad).toFixed(3)}</td>
+              </tr>
+            `;
+          }
+
+          $('#tblCarrito').html(html);
+          $('#total_pagar').text(`$${totalPagar.toFixed(3)}`);
+        },
+        error: function(error) {
+          console.log(error);
         }
+      });
+    }
+  }
+}
     </script>
     </div>
 

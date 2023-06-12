@@ -7,8 +7,35 @@ $correo = $_POST['correo'];
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
+// Validación del correo electrónico
+if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+    echo '
+        <script>
+            alert("Por favor, ingrese un correo electrónico válido"); 
+            window.location = "../Login.php";
+        </script>
+    ';
+    exit();
+}
+
+// Validación de la contraseña
+if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z]).{8,}$/', $contrasena)) {
+    echo '
+        <script>
+            alert("La contraseña debe tener al menos 8 caracteres y contener tanto mayúsculas como minúsculas"); 
+            window.location = "../Login.php";
+        </script>
+    ';
+    exit();
+}
+
 $query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena) 
         VALUES ('$nombre_completo','$correo','$usuario','$contrasena')";
+
+// Resto del código para verificar el correo y el usuario, y ejecutar la consulta
+
+// ...
+
 
 
 //verificar que el correo no se repita dentro de la bd
