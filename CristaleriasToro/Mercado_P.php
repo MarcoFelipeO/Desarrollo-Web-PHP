@@ -33,6 +33,7 @@ $preference->save();
 <body>
   <center>
     <div class="checkout-btn"></div>
+    <button class="checkout-btn" height="30"  ><a href="carrito.php">Volver al Carrito</a></button>
     <script>
       // Agrega credenciales de SDK
       var public_key = 'TEST-25bb443e-95c5-4344-b511-63d743e91c55';

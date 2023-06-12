@@ -151,7 +151,7 @@ require_once "PHP/config.php";
                             res.datos.forEach(element => {
                                 html += `
                             <tr>
-                                <td>${element.id}</td>
+                                <td></td> 
                                 <td>${element.nombre}</td>
                                 <td>${element.precio_unitario}</td>
                                 <td>${element.cantidad_Carro}</td>
@@ -160,7 +160,7 @@ require_once "PHP/config.php";
                             `;
                             });
                             $('#tblCarrito').html(html);
-                            $('#total_pagar').text(res.total);
+                            $('#total_pagar').text(res.total.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' }));
                         },
                         error: function(error) {
                             console.log(error);

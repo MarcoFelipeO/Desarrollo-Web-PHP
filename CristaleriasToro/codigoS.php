@@ -156,7 +156,7 @@
                         <div class="col mb-5 productos" category="<?php echo $data['categoria']; ?>">
                             <div class="card h-100">
                                 <!-- Product image-->
-                                <img class="card-img-top" src="img/<?php echo $data['imagen']; ?>" alt="..." />
+                                <img class="card-img-top" src="img/<?php echo $data['imagen']; ?>" height="300" width="300" alt="..." />
                                 <!-- Product details-->
                                 <div class="card-body p-4">
                                     <div class="text-center">
@@ -164,7 +164,8 @@
                                         <h5 class="fw-bolder"><?php echo $data['nombre'] ?></h5>
                                         <p><?php echo $data['descripcion']; ?></p>
                                         <!-- Product price-->
-                                        <span class="">$<?php echo number_format($data['precio_unitario'], 0, ',', '.'); ?></span>
+                                        <span class="">$<?php echo number_format($data['precio_unitario'], 0, ',', '.'); ?></span><br><br>
+                                        <p>Stock Disponible: <br><?php echo $data['stock_Productos']; ?></p>
                                     </div>
                                 </div>
                                 <!-- Product actions-->

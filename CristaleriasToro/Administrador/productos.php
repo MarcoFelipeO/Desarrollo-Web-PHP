@@ -44,7 +44,7 @@ include("header.php"); ?>
                         <th>Precio Unitario</th>
                         <th>Precio Pallet</th>
                         <th>Codigo</th>
-                        <th>Cantidad</th>
+                        <th>Stock Productos</th>
                         <th>Categoria</th>
                         <th>Editar</th>
                         <th>Eliminar</th>
@@ -58,10 +58,10 @@ include("header.php"); ?>
                             <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="350"></td>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion'];  ?></td>
-                            <td>$<?php echo $data['precio_unitario']; ?></td>
+                            <td>$<?php echo number_format($data['precio_unitario'], 0, ',', '.'); ?></td>
                             <td>$<?php echo number_format($data['precio_pallet'], 0, ',', '.'); ?></td>
                             <td><?php echo $data['codigo']; ?></td>
-                            <td><?php echo $data['cantidad']; ?></td>
+                            <td><?php echo $data['stock_Productos']; ?></td>
                             <td><?php echo $data['categoria']; ?></td>
                             
                             <td>
