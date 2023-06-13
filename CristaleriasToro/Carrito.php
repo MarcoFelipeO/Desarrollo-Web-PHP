@@ -39,34 +39,58 @@ require_once "PHP/config.php";
 
 <body>
 
+
+   <!-- Topbar Start -->
+   <div class="container-fluid bg-dark p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small class="izipizi">Luis Matte, Puente Alto, Santiago de Chile</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small class="izipizi">Atencion: Lunes a Viernes 8:30 a 20:00 hrs </small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small><a href="tel:+56932909140">Si quieres llamarnos +569 3290 91XX</a> </small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0 texto-éxito"> Viveros LUANNE</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.php" class="nav-item nav-link active">Inicio</a>
+                <a href="Quienes_Somos.php" class="nav-item nav-link">Quienes Somos</a>
+                <a href="codigoS.php" class="nav-item nav-link">Productos</a>
+                <a href="contacto.php" class="nav-item nav-link">Contactanos</a>
+            </div>
+            <a href="Login.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Inicia Sesion Aqui<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
 <a href="codigoS.php" class="btn-flotante" >Volver a Comprar <span class="badge bg-success" ></span></a>
    
-   
-
-    
-    <!-- Navigation-->
-    <div class="container">
-        <div class="fondocarrito">
-         
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">  <img class="foto1" src="img/colo.jpg" height="50"></a>
-                </div>
-                <div class="container-fluid">      
-                <a class="navbar-brand" href="index.php"> <strong>Inicio</strong></a> 
-                <a class="navbar-brand" href="Quienes_Somos.php"><strong>Quienes Somos</strong></a>
-                <a class="navbar-brand" href=" codigoS.php"><strong>Productos</strong></a>
-                <a class="navbar-brand" href="contacto.php "><strong>Contactanos</strong></a>
-            </div>
-            <a href="Login.php" class="btn btn-warning rounded-0 py-0 px-lg-5 d-none d-lg-block">Iniciar Sesion<i class="fa fa-arrow-right ms-2"></i></a>
-                <div>
-                    <div class="h-500 d-inline-flex align-items-center mx-n20">
-                        <a class="btn btn-square btn-link rounded-20 border-20 border-end border-secondary" href="https://web.facebook.com/pages/Cristaler%C3%ADas-Toro/197906423586073/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="navbar-brand" href="">  <img class="carritofoto" src="img/carrito.jpg">    </a>
-        
-                    </div>
-                </div>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -109,7 +133,7 @@ require_once "PHP/config.php";
                 <div class="col-md-5 ms-auto">
                     <h4><strong>Total a Pagar:</strong> <span id="total_pagar">$0</span></h4>
                     <div class="d-grid gap-2">
-                        <input class="btn btn-primary" type="button" onclick="location='Mercado_P.php'" value="PAGAR"/></input>
+                        <input id="botonpagar" class="btn btn-primary" type="button" onclick="location='Mercado_P.php'" value="PAGAR"/></input>
                         <button class="btn btn-primary" type="button" id="btnVaciar">VACIAR CARRITO</button>
                     </div>
                 </div>
