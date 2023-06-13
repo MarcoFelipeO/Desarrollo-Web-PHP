@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 // Actualizar el estado de la sesión del usuario a inactivo
 $_SESSION['logged_in'] = false;

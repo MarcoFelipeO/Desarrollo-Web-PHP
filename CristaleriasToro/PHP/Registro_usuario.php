@@ -51,17 +51,17 @@ if (mysqli_num_rows($verificar_correo) > 0) {
 }
 
 //verificar que el usuario no se repita dentro de la bd
-$verificar_usuario = mysqli_query($coneccion, "SELECT * FROM usuarios WHERE  usuario = '$usuario'");
+//$verificar_usuario = mysqli_query($coneccion, "SELECT * FROM usuarios WHERE  usuario = '$usuario'");
 
-if (mysqli_num_rows($verificar_usuario) > 0) {
-    echo '
-        <script>
-            alert("Este usuario ya esta registrado"); 
-            window.location = "../Login.php";
-        </script>
-    ';
-    exit();
-}
+//if (mysqli_num_rows($verificar_usuario) > 0) {
+//    echo '
+//        <script>
+//            alert("Este usuario ya esta registrado"); 
+//            window.location = "../Login.php";
+//        </script>
+//    ';
+//    exit();
+//}
 
 $ejecutar = mysqli_query($coneccion, $query);
 

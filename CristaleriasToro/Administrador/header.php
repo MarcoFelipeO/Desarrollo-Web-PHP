@@ -114,10 +114,29 @@ require_once "../PHP/coneccion.php";
                         </li>
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Marko Felipe Orellana</span>
-                                <img class="img-profile rounded-circle" src="../img/FondoLogin.jpg">
-                            </a>
+    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <?php
+
+        // Verificar si el usuario ha iniciado sesión
+        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+            // Obtener el rol del usuario de la base de datos
+            include 'coneccion.php'; // Incluye el archivo de conexión a la base de datos
+            $correo = $_SESSION['correo']; // Suponiendo que guardas el correo del usuario en la variable de sesión 'correo'
+
+            // Realizar la consulta para obtener el rol del usuario
+            $consulta = mysqli_query($coneccion, "SELECT rol FROM usuarios WHERE correo = '$correo'");
+            $resultado = mysqli_fetch_assoc($consulta);
+
+            // Mostrar el campo "rol" del usuario
+            echo '<span class="mr-2 d-none d-lg-inline text-gray-600 small">' . $resultado['rol'] . '</span>';
+        }
+        ?>
+
+        <img class="img-profile rounded-circle" src="../img/FondoLogin.jpg">
+    </a>
+</li>
+
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
