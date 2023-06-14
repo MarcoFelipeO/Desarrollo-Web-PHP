@@ -88,16 +88,18 @@ include("header.php"); ?>
                             <td><?php echo $data['categoria']; ?></td>
                             
                             <td>
-                                <form method="post" action="editar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-editar editar">
+                                <form method="post" action="editar.php?accion=pro&id=<?php echo $data['id']; ?>" class="editar">
                                     <button class="btn btn-danger" type="submit">Editar</button>
                                 </form>
                             </td>
+
 
                             <td>
                                 <form method="post" action="eliminar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
                                     <button class="btn btn-danger" type="submit">Eliminar</button>
                                 </form>
                             </td>
+
                         </tr>
                     <?php } ?>
                 </tbody>
@@ -195,7 +197,7 @@ include("header.php"); ?>
             <div class="modal-header bg-gradient-primary text-white">
                 <h5 class="modal-title" id="title">Edite Aqui sus Productos</h5>
                 <?php
-                 $id = $_GET['id']; 
+                 //$id = $_GET['id']; 
                  $productos = mysqli_query($coneccion, "select * from productos");
                 ?>
                 <button class="close" data-dismiss="modal" aria-label="Close">
