@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(); // SESSION START NOS SIRVE PARA PODER INICIAR SESION CON NUESTRO USUARIO.
 
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
@@ -12,6 +12,9 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 if ($_SESSION['rol'] !== 'admin') {
     // El usuario no tiene permisos de administrador, redireccionar a una página de acceso denegado o mostrar un mensaje de error
     echo "Acceso denegado. No tienes los permisos necesarios para acceder a esta página.";
+    echo 'Te estamos redireccionando';
+    // Redireccionar a index.php después de 5 segundos
+    header("refresh:5;url=../index.php");
     exit;
 }
 

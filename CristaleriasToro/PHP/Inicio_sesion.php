@@ -13,7 +13,15 @@ if (mysqli_num_rows($validar_inicio_sesion) > 0) {
 
     // Verificar si la sesión del usuario ya está activa
     if ($usuario['sesion_activa'] == 1) {
+        echo '<center>';
+        echo '<br><br><br><br>';
         echo 'Ya has iniciado sesión anteriormente.';
+        echo '<br><br>';
+        echo 'Te estamos redireccionando';
+        echo '<br>';
+        echo '</center>';
+        // Redireccionar a index.php después de 5 segundos
+        header("refresh:5;url=../index.php");
         exit;
     }
 

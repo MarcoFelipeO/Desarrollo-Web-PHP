@@ -29,47 +29,44 @@ if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z]).{8,}$/', $contrasena)) {
     exit();
 }
 
-$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena) 
-        VALUES ('$nombre_completo','$correo','$usuario','$contrasena')";
+// Verificar que el correo no se repita dentro de la BD
+$verificar_correo = mysqli_prepare($coneccion, "SELECT * FROM usuarios WHERE correo = ?");
+mysqli_stmt_bind_param($verificar_correo, "s", $correo);
+mysqli_stmt_execute($verificar_correo);
+$resultado_correo = mysqli_stmt_get_result($verificar_correo);
 
-// Resto del código para verificar el correo y el usuario, y ejecutar la consulta
-
-// ...
-
-
-
-//verificar que el correo no se repita dentro de la bd
-$verificar_correo = mysqli_query($coneccion, "SELECT * FROM usuarios WHERE  correo = '$correo'");
-if (mysqli_num_rows($verificar_correo) > 0) {
+if (mysqli_num_rows($resultado_correo) > 0) {
     echo '
         <script>
-            alert("Este correo ya esta registrado"); 
+            alert("Este correo ya está registrado"); 
             window.location = "../Login.php";
         </script>
     ';
     exit();
 }
 
-//verificar que el usuario no se repita dentro de la bd
-//$verificar_usuario = mysqli_query($coneccion, "SELECT * FROM usuarios WHERE  usuario = '$usuario'");
+// Verificar que el usuario no esté vacío
+if (empty($usuario)) {
+    echo '
+        <script>
+            alert("Por favor, ingrese un nombre de usuario"); 
+            window.location = "../Login.php";
+        </script>
+    ';
+    exit();
+}
 
-//if (mysqli_num_rows($verificar_usuario) > 0) {
-//    echo '
-//        <script>
-//            alert("Este usuario ya esta registrado"); 
-//            window.location = "../Login.php";
-//        </script>
-//    ';
-//    exit();
-//}
-
-$ejecutar = mysqli_query($coneccion, $query);
-
+// Crear consulta preparada
+$query = "INSERT INTO usuarios (nombre_completo, correo, usuario, contrasena) 
+        VALUES (?, ?, ?, ?)";
+$insertar_usuario = mysqli_prepare($coneccion, $query);
+mysqli_stmt_bind_param($insertar_usuario, "ssss", $nombre_completo, $correo, $usuario, $contrasena);
+$ejecutar = mysqli_stmt_execute($insertar_usuario);
 
 if ($ejecutar) {
     echo '
         <script>
-            alert("Usuario registrado con exito"); 
+            alert("Usuario registrado con éxito"); 
             window.location = "../Login.php";
         </script>
     ';
@@ -81,4 +78,6 @@ if ($ejecutar) {
         </script>
     ';
 }
+
+mysqli_stmt_close($insertar_usuario);
 mysqli_close($coneccion);
