@@ -1,7 +1,4 @@
-
-
 <?php
-
 session_start();
 
 // Verificar si el usuario ha iniciado sesión
@@ -15,11 +12,12 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 if ($_SESSION['rol'] !== 'admin') {
     // El usuario no tiene permisos de administrador, redireccionar a una página de acceso denegado o mostrar un mensaje de error
     echo "Acceso denegado. No tienes los permisos necesarios para acceder a esta página.";
-    //header("location: ../index.php");
     exit;
 }
 
 // Resto del código de la página "productos.php" para el acceso de administrador
+
+
 
 
 require_once "../PHP/coneccion.php";
@@ -190,15 +188,32 @@ include("header.php"); ?>
     </div>
 </div>
 <!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
+<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
+<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
+<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
+
+
+
+
 <div id="editarcosas" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header bg-gradient-primary text-white">
                 <h5 class="modal-title" id="title">Edite Aqui sus Productos</h5>
                 <?php
-                 //$id = $_GET['id']; 
-                 $productos = mysqli_query($coneccion, "select * from productos");
+                // Verificar si se proporcionó un ID válido
+                if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+                    $id = $_GET['id'];
+
+                    // Consultar la base de datos para obtener los datos del producto
+                    $query = mysqli_query($coneccion, "SELECT * FROM productos WHERE id = $id");
+                    $data = mysqli_fetch_assoc($query);
+
+                    // Continuar con el proceso de edición
+                } else {
+                    // Redireccionar al usuario o mostrar un mensaje de error
+                   // exit("ID de producto inválido");
+                }
                 ?>
                 <button class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -211,63 +226,23 @@ include("header.php"); ?>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
-                                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" required>
+                                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre " value="<?php echo $data['nombre']; ?>" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cantidad">Cantidad</label>
-                                <input id="cantidad" class="form-control" type="text" name="cantidad" placeholder="Cantidad" required>
+                                <input id="stock_Productos" class="form-control" type="text" name="stock_Productos" placeholder="stock Productos" value="<?php echo $data['stock_Productos']; ?>" required>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="descripcion">Descripción</label>
-                                <textarea id="descripcion" class="form-control" name="descripcion" placeholder="Descripción" rows="3" required></textarea>
+                                <textarea id="descripcion" class="form-control" name="descripcion" placeholder="Descripción" rows="3" required><?php echo $data['descripcion']; ?></textarea>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="codigo">Codigo</label>
-                                <input id="codigo" class="form-control" type="text" name="codigo" placeholder="Codigo" required>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="p_unitario">Precio Unitario</label>
-                                <input id="p_unitario" class="form-control" type="text" name="p_unitario" placeholder="Precio Unitario" required>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="p_pallet">Precio Pallet</label>
-                                <input id="p_pallet" class="form-control" type="text" name="p_pallet" placeholder="Precio Pallet" required>
-                            </div>
-                        </div>
-                        
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="categoria">Categoria</label>
-                                <select id="categoria" class="form-control" name="categoria" required>
-                                    <?php
-                                    $categorias = mysqli_query($coneccion, "SELECT * FROM categorias");
-                                    foreach ($categorias as $cat) { ?>
-                                        <option value="<?php echo $cat['id']; ?>"><?php echo $cat['categoria']; ?></option>
-                                    <?php } ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="imagen">Foto</label>
-                                <input type="file" class="form-control" name="foto" required>
-                            </div>
-                        </div>
-
+                        <!-- Repite el mismo proceso para los demás campos del formulario -->
 
                     </div>
                     <button class="btn btn-primary" type="submit">Actualizar datos</button>
@@ -276,5 +251,6 @@ include("header.php"); ?>
         </div>
     </div>
 </div>
+
 
 <?php include("footer.php"); ?>

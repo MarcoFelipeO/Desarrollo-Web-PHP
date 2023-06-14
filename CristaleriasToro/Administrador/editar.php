@@ -1,4 +1,3 @@
-
 <?php
 if (isset($_GET)) { //mientras se inicia la sesion
     if (!empty($_GET['accion']) && !empty($_GET['id'])) {
@@ -17,6 +16,15 @@ if (isset($_GET)) { //mientras se inicia la sesion
                 header('Location: categorias.php');
             }
         }
+
+                // Verificar si se proporcionó un ID válido
+        if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+            $id = $_GET['id'];
+            // Continuar con el proceso de edición
+        } else {
+            // Redireccionar al usuario o mostrar un mensaje de error
+        }
+
     }
 }
 ?>

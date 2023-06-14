@@ -6,7 +6,7 @@ if (isset($_SESSION['logged_in'])) {
     $_SESSION['rol'] = '';
 
     // Actualizar el campo 'sesion_activa' en la base de datos
-    include '../coneccion.php'; // Asegúrate de tener la ruta correcta al archivo 'coneccion.php'
+    include 'coneccion.php'; // Asegúrate de tener la ruta correcta al archivo 'coneccion.php'
 
     // Obtener el correo del usuario actual
     $correo = $_SESSION['correo'];
