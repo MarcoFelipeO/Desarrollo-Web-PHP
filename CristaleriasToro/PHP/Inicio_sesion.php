@@ -31,6 +31,7 @@ if (mysqli_num_rows($validar_inicio_sesion) > 0) {
     // Establecer las variables de sesión
     $_SESSION['logged_in'] = true;
     $_SESSION['rol'] = $usuario['rol'];
+    $_SESSION['correo'] = $usuario['correo'];
 
     if ($usuario['rol'] == 'admin') {
         // Redireccionar al área de administrador

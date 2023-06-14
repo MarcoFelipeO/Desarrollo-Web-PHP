@@ -1,24 +1,23 @@
 <?php
-// Verificar si la sesión está iniciada
-if (isset($_SESSION['logged_in'])) {
-    // Restablecer las variables de sesión relevantes
-    $_SESSION['logged_in'] = false;
-    $_SESSION['rol'] = '';
+session_start();
+include 'PHP/coneccion.php';
 
-    // Actualizar el campo 'sesion_activa' en la base de datos
-    include 'coneccion.php'; // Asegúrate de tener la ruta correcta al archivo 'coneccion.php'
-
-    // Obtener el correo del usuario actual
+if ($_SESSION['logged_in']) {
     $correo = $_SESSION['correo'];
-
-    // Actualizar el campo 'sesion_activa' a 0
+    
+    // Actualizar el estado de la sesión del usuario a inactivo
     mysqli_query($coneccion, "UPDATE usuarios SET sesion_activa = 0 WHERE correo = '$correo'");
 
-    // Destruir la sesión actual
+    // Destruir todas las variables de sesión
+    session_unset();
     session_destroy();
 
-    // Redireccionar a la página de inicio de sesión u otra página si es necesario
-    header("Location: ../Login.php");
+    // Redireccionar a la página de inicio de sesión
+    header("location: ../Login.php");
+    exit;
+} else {
+    // Si el usuario ya está deslogueado, redireccionar a la página de inicio de sesión
+    header("location: ../Login.php");
     exit;
 }
 ?>
