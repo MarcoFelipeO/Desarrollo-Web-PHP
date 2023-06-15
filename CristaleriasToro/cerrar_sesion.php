@@ -13,11 +13,11 @@ if ($_SESSION['logged_in']) {
     session_destroy();
 
     // Redireccionar a la página de inicio de sesión
-    header("location: ../Login.php");
+    header("location: Login.php");
     exit;
 } else {
     // Si el usuario ya está deslogueado, redireccionar a la página de inicio de sesión
-    header("location: ../Login.php");
+    header("location: Login.php");
     exit;
 }
 ?>

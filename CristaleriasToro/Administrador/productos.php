@@ -30,7 +30,7 @@ require_once "../PHP/coneccion.php";
 if (isset($_POST)) {
     if (!empty($_POST)) {
         $nombre = $_POST['nombre'];
-        $cantidad = $_POST['cantidad'];
+        $stock_Productos = $_POST['stock_Productos'];
         $descripcion = $_POST['descripcion'];
         $p_unitario = $_POST['p_unitario'];
         $p_pallet = $_POST['p_pallet'];
@@ -42,7 +42,7 @@ if (isset($_POST)) {
         $fecha = date("YmdHis");
         $foto = $fecha . ".jpg";
         $destino = "../img/" . $foto;
-        $query = mysqli_query($coneccion, "INSERT INTO productos(nombre, descripcion, precio_unitario, precio_pallet, codigo, cantidad, imagen, id_categoria) VALUES ('$nombre', '$descripcion','$p_unitario', '$p_pallet', '$codigo', $cantidad, '$foto', $categoria)");
+        $query = mysqli_query($coneccion, "INSERT INTO productos(nombre, descripcion, precio_unitario, precio_pallet, codigo, stock_Productos, imagen, id_categoria) VALUES ('$nombre', '$descripcion','$p_unitario', '$p_pallet', '$codigo', $stock_Productos, '$foto', $categoria)");
         if ($query) {
             if (move_uploaded_file($tmpname, $destino)) {
                 header('Location: productos.php');
@@ -112,7 +112,7 @@ include("header.php"); ?>
 </div>
 
 <!-- Coloca este código donde deseas mostrar el enlace de deslogueo -->
-<a href="../cerrar_sesion.php">Cerrar sesión</a>
+<a class="btn btn-warning" href="../cerrar_sesion.php">Cerrar sesión</a>
 
 
 <!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
@@ -142,8 +142,8 @@ include("header.php"); ?>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="cantidad">Cantidad</label>
-                                <input id="cantidad" class="form-control" type="text" name="cantidad" placeholder="Cantidad" required>
+                                <label for="stock_Productos">Cantidad</label>
+                                <input id="stock_Productos" class="form-control" type="text" name="stock_Productos" placeholder="stock Productos" required>
                             </div>
                         </div>
                         <div class="col-md-12">
