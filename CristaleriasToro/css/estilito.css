@@ -67,3 +67,19 @@ background-attachment: fixed;
 .botonpagar{
     border-radius:3000px;
 }
+
+
+
+.descripcion-recortada {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .descripcion-completa {
+    white-space: normal;
+  }
+  .hidden {
+    display: none;
+  }
+  

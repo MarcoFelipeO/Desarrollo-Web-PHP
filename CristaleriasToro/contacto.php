@@ -58,7 +58,7 @@
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>Telefono: (+56 9) 3290 9140</small>
+                    <small>Telefono: (+56 9) 3290 XXXX</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -107,39 +107,39 @@
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 ps-lg-0">
-                        <h6 class="text-primary">¿Necesita ayuda?</h6>
-                        <h1 class="mb-4">Contacte con Nosotros</h1>
+                        <h6 class="text-primary">¿Necesitas ayuda?</h6>
+                        <h1 class="mb-4">Contactate con Nosotros</h1>
                         <p class="mb-4"> Formulario de contacto</p>
                         <form action="https://formsubmit.co/d90b1b38d7d4d6a5f0a7e7071eaad9e6" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control"  name = "name" placeholder="Ingrese Nombre" required>
-                                        <label for="name">Ingrese Nombre</label>
+                                        <input type="text" class="form-control"  name="name" placeholder="Ingrese Nombre" required>
+                                        <label for="name">Ingrese su Nombre</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" name ="email" placeholder="Ingrese gmail" required>
-                                        <label for="email">Ingrese Gmail</label>
+                                        <input type="email" class="form-control" name="email" placeholder="Ingrese gmail" required>
+                                        <label for="email">Ingrese su Correo</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" name ="subject" placeholder="asunto" required>
+                                        <input type="text" class="form-control" name="subject" placeholder="asunto" required>
                                         <label for="subject">Asunto</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Ingresa Mensaje" required name ="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Ingresa Mensaje" required name="message" style="height: 100px"></textarea>
                                         <label for="message">Mensaje</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Enviar Mensaje</button>
-                                    <input type= "hidden" name = "_next" value ="http://localhost/Cristalerias%20ToroV1/contacto.php">
-                                    <input type= "hidden" name = "_captcha" value = "false">
+                                    <input type= "hidden" name="_next" value ="http://localhost/Cristalerias%20ToroV1/contacto.php">
+                                    <input type= "hidden" name="_captcha" value = "false">
                                 </div>
                             </div>
                         </form>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.462714888869!2d-70.69792920042232!3d-33.48013548595441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dc585384f4f5%3A0x9c8cc1c811024b67!2sCristaler%C3%ADas%20Toro%20-%20Sala%20de%20Ventas!5e0!3m2!1ses-419!2scl!4v1655233808592!5m2!1ses-419!2scl"
+                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3796.812078056913!2d-71.47989578275646!3d-32.7156165490852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1686842576341!5m2!1ses!2scl"
                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen="" aria-hidden="false"
                          tabindex="0"> > </iframe>
                     </div>
@@ -165,7 +165,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Direccion</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Luis matte ###### Puente Alto, Santiago de Chile</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+56 9) 3290 9140</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+56 9) 3290 XXXX</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>mafeorellana09@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>

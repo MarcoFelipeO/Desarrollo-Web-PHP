@@ -4,6 +4,7 @@
     <?php require_once "PHP/coneccion.php"; 
     
     
+               
     
     ?>
     <head>
@@ -96,7 +97,7 @@
             <a href="codigoS.php" class="nav-item nav-link">Productos</a>
             <div class="nav-item dropdown">
             </div>
-            <a href="contacto.php" class="nav-item nav-link">contacto</a>
+            <a href="contacto.php" class="nav-item nav-link">Contacto</a>
         </div>
        
 </nav>

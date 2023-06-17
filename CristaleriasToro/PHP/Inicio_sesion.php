@@ -33,6 +33,9 @@ if (mysqli_num_rows($validar_inicio_sesion) > 0) {
     $_SESSION['rol'] = $usuario['rol'];
     $_SESSION['correo'] = $usuario['correo'];
 
+    // Establecer el nombre de usuario en la sesión
+    $_SESSION['usuario'] = $usuario['nombre']; // Asumiendo que el campo en la base de datos que contiene el nombre de usuario se llama 'nombre'
+
     if ($usuario['rol'] == 'admin') {
         // Redireccionar al área de administrador
         header("location: ../Administrador/productos.php");

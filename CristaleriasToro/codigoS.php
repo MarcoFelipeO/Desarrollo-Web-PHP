@@ -157,13 +157,14 @@
                         <div class="col mb-5 productos" category="<?php echo $data['categoria']; ?>">
                             <div class="card h-100">
                                 <!-- Product image-->
-                                <img class="card-img-top" src="img/<?php echo $data['imagen']; ?>" height="300" width="300" alt="..." />
+                                <img id="imgcaja" class="card-img-top" src="img/<?php echo $data['imagen']; ?>" height="240"  alt="..." />
                                 <!-- Product details-->
                                 <div class="card-body p-4">
                                     <div class="text-center">
                                         <!-- Product name-->
                                         <h5 class="fw-bolder"><?php echo $data['nombre'] ?></h5>
-                                        <p><?php echo $data['descripcion']; ?></p>
+                                        <p class="descripcion-recortada"><?php echo substr($data['descripcion'], 0, 70); ?></p>
+                                        <a class="ver-mas" href="#" data-toggle="modal" data-target="#descripcionModal-<?php echo $data['id']; ?>">Ver más</a>
                                         <!-- Product price-->
                                         <span class="">$<?php echo number_format($data['precio_unitario'], 0, ',', '.'); ?></span><br><br>
                                         <p>Stock Disponible: <br><?php echo $data['stock_Productos']; ?></p>
@@ -182,6 +183,29 @@
         </div>
     </section>
 <!--- TRAE EL CUADRO/card CON LA INFORMACION DESDE LA BDD--->
+
+
+<!-- Modal -->
+<div class="modal fade" id="descripcionModal-<?php echo $data['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="descripcionModalLabel-<?php echo $data['id']; ?>" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="descripcionModalLabel-<?php echo $data['id']; ?>">Descripción completa</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <?php echo $data['descripcion']; ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
@@ -204,6 +228,29 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>
 <!--- SCRIPT COLOCAR EL SCRIPT ---><!--- SCRIPT COLOCAR EL SCRIPT --->
+
+
+<script>
+  // Obtener todos los elementos de descripción y enlaces "Ver más"
+  const descripcionesRecortadas = document.querySelectorAll('.descripcion-recortada');
+  const descripcionesCompletas = document.querySelectorAll('.descripcion-completa');
+  const verMasLinks = document.querySelectorAll('.ver-mas');
+
+  // Iterar sobre cada enlace "Ver más"
+  verMasLinks.forEach((link, index) => {
+    // Agregar un controlador de evento de clic a cada enlace
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      // Alternar la visibilidad de los elementos de descripción
+      descripcionesRecortadas[index].classList.toggle('hidden');
+      descripcionesCompletas[index].classList.toggle('hidden');
+    });
+  });
+</script>
+
+
+
 
 
 </body>

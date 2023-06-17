@@ -1,5 +1,5 @@
 <?php
-session_start(); // SESSION START NOS SIRVE PARA PODER INICIAR SESION CON NUESTRO USUARIO.
+session_start(); // SESSION START, NOS SIRVE PARA PODER INICIAR SESION CON NUESTRO USUARIO.
 
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
@@ -19,13 +19,7 @@ if ($_SESSION['rol'] !== 'admin') {
 }
 
 // Resto del código de la página "productos.php" para el acceso de administrador
-
-
-
-
 require_once "../PHP/coneccion.php";
-
-
 
 if (isset($_POST)) {
     if (!empty($_POST)) {
@@ -50,6 +44,7 @@ if (isset($_POST)) {
         }
     }
 }
+
 include("header.php"); ?>
 
 
