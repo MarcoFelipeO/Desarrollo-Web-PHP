@@ -34,7 +34,7 @@ if (mysqli_num_rows($validar_inicio_sesion) > 0) {
     $_SESSION['correo'] = $usuario['correo'];
 
     // Establecer el nombre de usuario en la sesión
-    $_SESSION['usuario'] = $usuario['nombre']; // Asumiendo que el campo en la base de datos que contiene el nombre de usuario se llama 'nombre'
+    $_SESSION['usuario'] = $usuario['usuario'];// Asumiendo que el campo en la base de datos que contiene el nombre de usuario se llama 'nombre'
 
     if ($usuario['rol'] == 'admin') {
         // Redireccionar al área de administrador
