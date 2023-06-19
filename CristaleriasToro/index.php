@@ -78,11 +78,11 @@ require_once "PHP/coneccion.php";
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0 texto-éxito"> Viveros LUANNE</h2>
-            <div>
-    <?php
-    echo 'Bienvenido, ' . $_SESSION['usuario'] . '!';
-    ?>
-</div>
+    <!--<div>
+            <?php
+            echo 'Bienvenido, ' . $_SESSION['usuario'] . '!';
+            ?>
+        </div>  -->
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
