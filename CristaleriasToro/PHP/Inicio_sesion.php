@@ -41,7 +41,7 @@ if (mysqli_num_rows($validar_inicio_sesion) > 0) {
         header("location: ../Administrador/productos.php");
     } else {
         // Redireccionar a la página correspondiente para otros roles de usuario
-        header("location: ../codigoS.php");
+        header("location: ../index.php");
     }
     
     exit;

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
-
 <?php 
 session_start();
 
 
 require_once "PHP/coneccion.php";
-
 ?>
+
+
 
 
 <head>
