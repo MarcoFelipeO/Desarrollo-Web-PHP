@@ -4,7 +4,7 @@ session_start(); // SESSION START, NOS SIRVE PARA PODER INICIAR SESION CON NUEST
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     // El usuario no ha iniciado sesión, redireccionar a la página de inicio de sesión
-    header("location: ../Login.php");
+    header("location: ../login.php");
     exit;
 }
 
@@ -23,27 +23,36 @@ require_once "../PHP/coneccion.php";
 
 if (isset($_POST)) {
     if (!empty($_POST)) {
-        $nombre = $_POST['nombre'];
-        $stock_Productos = $_POST['stock_Productos'];
-        $descripcion = $_POST['descripcion'];
-        $p_unitario = $_POST['p_unitario'];
-        $p_pallet = $_POST['p_pallet'];
-        $codigo = $_POST['codigo'];
-        $categoria = $_POST['categoria'];
-        $img = $_FILES['foto'];
-        $name = $img['name'];
-        $tmpname = $img['tmp_name'];
-        $fecha = date("YmdHis");
-        $foto = $fecha . ".jpg";
-        $destino = "../img/" . $foto;
-        $query = mysqli_query($coneccion, "INSERT INTO productos(nombre, descripcion, precio_unitario, precio_pallet, codigo, stock_Productos, imagen, id_categoria) VALUES ('$nombre', '$descripcion','$p_unitario', '$p_pallet', '$codigo', $stock_Productos, '$foto', $categoria)");
-        if ($query) {
-            if (move_uploaded_file($tmpname, $destino)) {
-                header('Location: productos.php');
+         $id = isset($_POST['id']) ? $_POST['id'] : ''; 
+        $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
+        $stock_Productos = isset($_POST['stock_Productos']) ? $_POST['stock_Productos'] : '';
+        $descripcion = isset($_POST['descripcion']) ? $_POST['descripcion'] : '';
+        $precio_unitario = isset($_POST['precio_unitario']) ? $_POST['precio_unitario'] : '';
+        $precio_pallet = isset($_POST['precio_pallet']) ? $_POST['precio_pallet'] : '';
+        $codigo = isset($_POST['codigo']) ? $_POST['codigo'] : '';
+        $categoria = isset($_POST['categoria']) ? $_POST['categoria'] : '';
+
+        if (!empty($nombre) && !empty($stock_Productos) && !empty($descripcion) && !empty($precio_unitario) && !empty($precio_pallet) && !empty($codigo) && !empty($categoria)) {
+            $img = isset($_FILES['foto']) ? $_FILES['foto'] : '';
+            $name = isset($img['name']) ? $img['name'] : '';
+            $tmpname = isset($img['tmp_name']) ? $img['tmp_name'] : '';
+            $fecha = date("YmdHis");
+            $foto = $fecha . ".jpg";
+            $destino = "../img/" . $foto;
+
+            $query = mysqli_query($coneccion, "INSERT INTO productos(nombre, descripcion, precio_unitario, precio_pallet, codigo, stock_Productos, imagen, id_categoria) VALUES ('$nombre', '$descripcion','$precio_unitario', '$precio_pallet', '$codigo', $stock_Productos, '$foto', $categoria)");
+            
+            if ($query) {
+                if (isset($img) && move_uploaded_file($tmpname, $destino)) {
+                    header('Location: productos.php');
+                    exit; // Importante agregar esta línea para evitar que el código siga ejecutándose después de la redirección
+                }
             }
         }
     }
 }
+
+
 
 include("header.php"); ?>
 
@@ -59,6 +68,7 @@ include("header.php"); ?>
             <table class="table table-hover table-bordered" style="width: 100%;">
                 <thead class="thead-dark">
                     <tr>
+                        <th>id</th>
                         <th>Imagen</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
@@ -76,6 +86,7 @@ include("header.php"); ?>
                     $query = mysqli_query($coneccion, "SELECT p.*, c.id AS id_cat, c.categoria FROM productos p INNER JOIN categorias c ON c.id = p.id_categoria ORDER BY p.id DESC");
                     while ($data = mysqli_fetch_assoc($query)) { ?>
                         <tr>
+                            <td><?php echo $data['id']; ?></td>
                             <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="350"></td>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion'];  ?></td>
@@ -85,13 +96,17 @@ include("header.php"); ?>
                             <td><?php echo $data['stock_Productos']; ?></td>
                             <td><?php echo $data['categoria']; ?></td>
                             
+
+                            <!--      B O T O N      E D I T A R   --->
                             <td>
-                                <form method="post" action="editar.php?accion=pro&id=<?php echo $data['id']; ?>" class="editar">
-                                    <button class="btn btn-danger" type="submit">Editar</button>
-                                </form>
+                            <form action="editar.php?id=<?php echo $data['id']; ?>&accion=pro" method="POST" enctype="multipart/form-data" autocomplete="off">
+                            <a href="productos.php?id=123">Editar</a>
+                                <button class="btn btn-danger" type="submit">Editar</button>
+                            </form>
+
                             </td>
 
-
+                            <!--      B O T O N      E L I M I N A R   --->
                             <td>
                                 <form method="post" action="eliminar.php?accion=pro&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
                                     <button class="btn btn-danger" type="submit">Eliminar</button>
@@ -112,7 +127,7 @@ include("header.php"); ?>
 
 <!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
-
+<!-- I N G R E S A     U N     N U E V O       P R O D U C T O -->
 
 <div id="productos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -157,15 +172,15 @@ include("header.php"); ?>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="p_unitario">Precio Unitario</label>
-                                <input id="p_unitario" class="form-control" type="text" name="p_unitario" placeholder="Precio Unitario" required>
+                                <label for="precio_unitario">Precio Unitario</label>
+                                <input id="precio_unitario" class="form-control" type="text" name="precio_unitario" placeholder="Precio Unitario" required>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="p_pallet">Precio Pallet</label>
-                                <input id="p_pallet" class="form-control" type="text" name="p_pallet" placeholder="Precio Pallet" required>
+                                <label for="precio_pallet">Precio Pallet</label>
+                                <input id="precio_pallet" class="form-control" type="text" name="precio_pallet" placeholder="Precio Pallet" required>
                             </div>
                         </div>
                         
@@ -195,70 +210,86 @@ include("header.php"); ?>
         </div>
     </div>
 </div>
+
+
+
 <!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
 <!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
 <!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
 <!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
 
-
-
-
 <div id="editarcosas" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-gradient-primary text-white">
-                <h5 class="modal-title" id="title">Edite Aqui sus Productos</h5>
-                <?php
-                // Verificar si se proporcionó un ID válido
-                if (isset($_GET['id']) && is_numeric($_GET['id'])) {
-                    $id = $_GET['id'];
-
-                    // Consultar la base de datos para obtener los datos del producto
-                    $query = mysqli_query($coneccion, "SELECT * FROM productos WHERE id = $id");
-                    $data = mysqli_fetch_assoc($query);
-
-                    // Continuar con el proceso de edición
-                } else {
-                    // Redireccionar al usuario o mostrar un mensaje de error
-                   // exit("ID de producto inválido");
-                }
-                ?>
+            <div class="modal-header bg-gradient-success text-white">
+                <h5 class="modal-title" id="title">Edite Aquí sus Productos</h5>
                 <button class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
 
             <div class="modal-body">
-                <form action="" method="POST" enctype="multipart/form-data" autocomplete="off">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre " value="<?php echo $data['nombre']; ?>" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="cantidad">Cantidad</label>
-                                <input id="stock_Productos" class="form-control" type="text" name="stock_Productos" placeholder="stock Productos" value="<?php echo $data['stock_Productos']; ?>" required>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="descripcion">Descripción</label>
-                                <textarea id="descripcion" class="form-control" name="descripcion" placeholder="Descripción" rows="3" required><?php echo $data['descripcion']; ?></textarea>
-                            </div>
-                        </div>
+                <?php
+                // Obtener el ID del producto a editar
+                $id = $_GET['id'];
 
-                        <!-- Repite el mismo proceso para los demás campos del formulario -->
+                // Realizar la consulta para obtener los datos del producto
+                $query = mysqli_query($coneccion, "SELECT * FROM productos WHERE id = '$id'");
+                $data = mysqli_fetch_assoc($query);
 
-                    </div>
-                    <button class="btn btn-primary" type="submit">Actualizar datos</button>
-                </form>
+                // Verificar si se encontraron resultados
+                if ($data) {
+                    $nombre = $data['nombre'];
+                    $descripcion = $data['descripcion'];
+                    $precio_unitario = $data['precio_unitario'];
+                    $precio_pallet = $data['precio_pallet'];
+                    $codigo = $data['codigo'];
+                    $stock_Productos = $data['stock_Productos'];
+                    $id_categoria = $data['id_categoria'];
+
+                    // Consulta para obtener las categorías disponibles
+                    $query_categorias = mysqli_query($coneccion, "SELECT * FROM categorias");
+                    ?>
+                    <form action="editar.php?accion=pro&id=<?php echo $id; ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
+                        <!-- Aquí van los campos del formulario -->
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" value="<?php echo $nombre; ?>" required>
+                        </div>
+                        <!-- Otros campos del formulario... -->
+                        <div class="form-group">
+                            <label for="id_categoria">Categoría:</label>
+                            <select id="id_categoria" class="form-control" name="id_categoria">
+                                <?php
+                                // Mostrar las categorías disponibles en el select
+                                while ($categoria = mysqli_fetch_assoc($query_categorias)) {
+                                    $categoria_id = $categoria['id'];
+                                    $categoria_nombre = $categoria['nombre'];
+                                    // Verificar si la categoría es la actual seleccionada
+                                    $selected = ($categoria_id == $id_categoria) ? 'selected' : '';
+                                    echo "<option value='$categoria_id' $selected>$categoria_nombre</option>";
+                                }
+                                ?>
+                            </select>
+                        </div>
+                        <!-- Otros campos del formulario... -->
+                        <button class="btn btn-primary" type="submit">Actualizar datos</button>
+                    </form>
+                    <?php
+                } else {
+                    echo "No se encontraron datos para el producto con ID: $id";
+                }
+                ?>
             </div>
         </div>
     </div>
 </div>
+
+
+<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
+<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
+<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
+<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
 
 
 <?php include("footer.php"); ?>

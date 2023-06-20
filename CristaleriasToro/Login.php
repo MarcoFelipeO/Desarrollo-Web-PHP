@@ -1,12 +1,24 @@
 <html>
     <!DOCTYPE html>
-    <html lang="en">
-    <?php require_once "PHP/coneccion.php"; 
+    <html lang="es">
+
+    <?php 
+    session_start();
     
-    
-               
-    
+    // Verificar si el usuario ha iniciado sesión
+    if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+        // Mostrar el mensaje de bienvenida junto con el nombre de usuario
+        echo 'Bienvenido, ' . $_SESSION['usuario'];
+        echo '<br>Rol: ' . $_SESSION['rol'];
+        echo '<br>Correo: ' .$_SESSION['correo'];
+    } else {
+        // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
+        echo '#Por favor debes iniciar sesión ';
+    }
+    //conexion a la BDD
+    require_once "PHP/coneccion.php";
     ?>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

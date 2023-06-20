@@ -49,7 +49,7 @@ if (mysqli_num_rows($validar_inicio_sesion) > 0) {
     echo '
     <script>
         alert("Nombre de usuario o contraseña incorrecto");
-        window.location = "../Login.php";
+        window.location = "../login.php";
     </script>
     ';
     exit;

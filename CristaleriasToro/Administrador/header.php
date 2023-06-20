@@ -1,10 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
 <?php
-require_once "../PHP/coneccion.php";
 
+// Verificar si el usuario ha iniciado sesión
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+    // Mostrar el mensaje de bienvenida junto con el nombre de usuario
+   // echo 'Bienvenido, ' . $_SESSION['usuario'];
+   // echo '<br>Rol: ' . $_SESSION['rol'];
+   // echo '<br>Correo: ' .$_SESSION['correo'];
+} else {
+    // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
+    echo '#Por favor debes iniciar sesión ';
+}
+
+require_once "../PHP/coneccion.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
 
@@ -115,7 +126,7 @@ require_once "../PHP/coneccion.php";
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Marko Felipe Orellana</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo 'Bienvenido, ' . $_SESSION['usuario']; ?></span>
                                 <img class="img-profile rounded-circle" src="../img/arbustos.jpg">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -125,9 +136,8 @@ require_once "../PHP/coneccion.php";
                                     Perfil 
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../Login.php">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Salir
+                                <a class="dropdown-item" href="../login.php">
+                                    <a class="btn btn-warning" id="cerrarses" href="../cerrar_sesion.php">Cerrar sesión</a><!----CERRAR SESION ---->
                                 </a>
                             </div>
                         </li>
