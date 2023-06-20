@@ -6,7 +6,6 @@ if (isset($_GET['id'])) {
     // Verificar si se enviaron los datos del formulario
     if (isset($_POST['nombre'], $_POST['descripcion'], $_POST['precio_unitario'], $_POST['precio_pallet'], $_POST['codigo'], $_POST['stock_Productos'], $_POST['id_categoria'])) {
         // Capturar los valores actualizados del formulario
-        
         $nombre = $_POST['nombre'];
         $descripcion = $_POST['descripcion'];
         $precio_unitario = $_POST['precio_unitario'];
@@ -29,9 +28,8 @@ if (isset($_GET['id'])) {
         $producto = mysqli_fetch_assoc($query);
 
         if ($producto) {
-            // Mostrar el formulario de edición con los datos existentes del registro
-            ?>
-            <form method="POST" action="">
+?>
+            <form method="POST" action="editar.php?id=<?php echo $id; ?>">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" value="<?php echo $producto['nombre']; ?>"><br>
 
@@ -55,7 +53,7 @@ if (isset($_GET['id'])) {
 
                 <input type="submit" value="Actualizar">
             </form>
-            <?php
+<?php
         } else {
             echo "No se encontraron datos para el producto con ID: $id";
         }

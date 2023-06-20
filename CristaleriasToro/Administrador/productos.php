@@ -23,7 +23,8 @@ require_once "../PHP/coneccion.php";
 
 if (isset($_POST)) {
     if (!empty($_POST)) {
-         $id = isset($_POST['id']) ? $_POST['id'] : ''; 
+
+        $id = isset($_GET['id']) ? $_GET['id'] : '';
         $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
         $stock_Productos = isset($_POST['stock_Productos']) ? $_POST['stock_Productos'] : '';
         $descripcion = isset($_POST['descripcion']) ? $_POST['descripcion'] : '';
@@ -100,7 +101,7 @@ include("header.php"); ?>
                             <!--      B O T O N      E D I T A R   --->
                             <td>
                             <form action="editar.php?id=<?php echo $data['id']; ?>&accion=pro" method="POST" enctype="multipart/form-data" autocomplete="off">
-                            <a href="productos.php?id=123">Editar</a>
+
                                 <button class="btn btn-danger" type="submit">Editar</button>
                             </form>
 
@@ -217,79 +218,5 @@ include("header.php"); ?>
 <!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
 <!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
 <!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
-
-<div id="editarcosas" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-gradient-success text-white">
-                <h5 class="modal-title" id="title">Edite Aquí sus Productos</h5>
-                <button class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <?php
-                // Obtener el ID del producto a editar
-                $id = $_GET['id'];
-
-                // Realizar la consulta para obtener los datos del producto
-                $query = mysqli_query($coneccion, "SELECT * FROM productos WHERE id = '$id'");
-                $data = mysqli_fetch_assoc($query);
-
-                // Verificar si se encontraron resultados
-                if ($data) {
-                    $nombre = $data['nombre'];
-                    $descripcion = $data['descripcion'];
-                    $precio_unitario = $data['precio_unitario'];
-                    $precio_pallet = $data['precio_pallet'];
-                    $codigo = $data['codigo'];
-                    $stock_Productos = $data['stock_Productos'];
-                    $id_categoria = $data['id_categoria'];
-
-                    // Consulta para obtener las categorías disponibles
-                    $query_categorias = mysqli_query($coneccion, "SELECT * FROM categorias");
-                    ?>
-                    <form action="editar.php?accion=pro&id=<?php echo $id; ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
-                        <!-- Aquí van los campos del formulario -->
-                        <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" value="<?php echo $nombre; ?>" required>
-                        </div>
-                        <!-- Otros campos del formulario... -->
-                        <div class="form-group">
-                            <label for="id_categoria">Categoría:</label>
-                            <select id="id_categoria" class="form-control" name="id_categoria">
-                                <?php
-                                // Mostrar las categorías disponibles en el select
-                                while ($categoria = mysqli_fetch_assoc($query_categorias)) {
-                                    $categoria_id = $categoria['id'];
-                                    $categoria_nombre = $categoria['nombre'];
-                                    // Verificar si la categoría es la actual seleccionada
-                                    $selected = ($categoria_id == $id_categoria) ? 'selected' : '';
-                                    echo "<option value='$categoria_id' $selected>$categoria_nombre</option>";
-                                }
-                                ?>
-                            </select>
-                        </div>
-                        <!-- Otros campos del formulario... -->
-                        <button class="btn btn-primary" type="submit">Actualizar datos</button>
-                    </form>
-                    <?php
-                } else {
-                    echo "No se encontraron datos para el producto con ID: $id";
-                }
-                ?>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
-<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
-<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
-<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
-
 
 <?php include("footer.php"); ?>
