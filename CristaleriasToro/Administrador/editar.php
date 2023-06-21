@@ -1,4 +1,7 @@
 <?php
+session_start(); // SESSION START, NOS SIRVE PARA PODER INICIAR SESION CON NUESTRO USUARIO.
+
+
 if (isset($_GET['id'])) {
     require_once "../PHP/coneccion.php"; // se conecta a la base de datos
     $id = $_GET['id']; // ID
@@ -29,30 +32,62 @@ if (isset($_GET['id'])) {
 
         if ($producto) {
 ?>
-            <form method="POST" action="editar.php?id=<?php echo $id; ?>">
+            
+<html lang="es">
+<?php include("header.php"); ?>
+<body>
+    <div class="container">
+        <h1>Editar Producto</h1>
+        <form method="POST" action="editar.php?id=<?php echo $id; ?>">
+            <div class="form-group">
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" value="<?php echo $producto['nombre']; ?>"><br>
-
+                <input type="text" class="form-control" name="nombre" value="<?php echo $producto['nombre']; ?>">
+            </div>
+            <div class="form-group">
                 <label for="descripcion">Descripción:</label>
-                <textarea name="descripcion"><?php echo $producto['descripcion']; ?></textarea><br>
-
+                <textarea class="form-control" name="descripcion"><?php echo $producto['descripcion']; ?></textarea>
+            </div>
+            <div class="form-group">
                 <label for="precio_unitario">Precio Unitario:</label>
-                <input type="text" name="precio_unitario" value="<?php echo $producto['precio_unitario']; ?>"><br>
-
+                <input type="text" class="form-control" name="precio_unitario" value="<?php echo $producto['precio_unitario']; ?>">
+            </div>
+            <div class="form-group">
                 <label for="precio_pallet">Precio Pallet:</label>
-                <input type="text" name="precio_pallet" value="<?php echo $producto['precio_pallet']; ?>"><br>
-
+                <input type="text" class="form-control" name="precio_pallet" value="<?php echo $producto['precio_pallet']; ?>">
+            </div>
+            <div class="form-group">
                 <label for="codigo">Código:</label>
-                <input type="text" name="codigo" value="<?php echo $producto['codigo']; ?>"><br>
-
+                <input type="text" class="form-control" name="codigo" value="<?php echo $producto['codigo']; ?>">
+            </div>
+            <div class="form-group">
                 <label for="stock_Productos">Stock:</label>
-                <input type="text" name="stock_Productos" value="<?php echo $producto['stock_Productos']; ?>"><br>
+                <input type="text" class="form-control" name="stock_Productos" value="<?php echo $producto['stock_Productos']; ?>">
+            </div>
+            <div class="form-group">
+                <label for="id_categoria">Categoría:</label>
+                <select class="form-control" name="id_categoria">
+                    <?php
+                    // Obtener todas las categorías de la base de datos
+                    $queryCategorias = mysqli_query($coneccion, "SELECT id, categoria FROM categorias");
+                    while ($categoria = mysqli_fetch_assoc($queryCategorias)) {
+                        $categoriaId = $categoria['id'];
+                        $categoriaNombre = $categoria['categoria'];
+                        ?>
+                        <option value="<?php echo $categoriaId; ?>" <?php if ($categoriaId == $producto['id_categoria']) echo "selected"; ?>><?php echo $categoriaNombre; ?></option>
+                    <?php } ?>
+                </select>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Actualizar">
+        </form>
+    </div>
 
-                <label for="id_categoria">ID Categoría:</label>
-                <input type="text" name="id_categoria" value="<?php echo $producto['id_categoria']; ?>"><br>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
 
-                <input type="submit" value="Actualizar">
-            </form>
 <?php
         } else {
             echo "No se encontraron datos para el producto con ID: $id";
@@ -62,3 +97,5 @@ if (isset($_GET['id'])) {
     echo "ID no proporcionado";
 }
 ?>
+
+<?php include("footer.php"); ?>

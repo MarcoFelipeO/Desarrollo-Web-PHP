@@ -88,7 +88,7 @@ include("header.php"); ?>
                     while ($data = mysqli_fetch_assoc($query)) { ?>
                         <tr>
                             <td><?php echo $data['id']; ?></td>
-                            <td><img class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>" width="350"></td>
+                            <td><img  id="imagenproducto" class="img-thumbnail" src="../img/<?php echo $data['imagen']; ?>"></td>
                             <td><?php echo $data['nombre']; ?></td>
                             <td><?php echo $data['descripcion'];  ?></td>
                             <td>$<?php echo number_format($data['precio_unitario'], 0, ',', '.'); ?></td>
@@ -101,8 +101,7 @@ include("header.php"); ?>
                             <!--      B O T O N      E D I T A R   --->
                             <td>
                             <form action="editar.php?id=<?php echo $data['id']; ?>&accion=pro" method="POST" enctype="multipart/form-data" autocomplete="off">
-
-                                <button class="btn btn-danger" type="submit">Editar</button>
+                                <button class="btn btn-success" type="submit">Editar</button>
                             </form>
 
                             </td>
@@ -211,12 +210,5 @@ include("header.php"); ?>
         </div>
     </div>
 </div>
-
-
-
-<!------------------------------------------------------------------------------------><!------------------------------------------------------------------------------------>
-<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
-<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
-<!----------------------------------------------------EDITAR COSAS --------------------------------><!------------------------------------------------------------------------------------>
 
 <?php include("footer.php"); ?>
