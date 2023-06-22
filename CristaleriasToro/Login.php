@@ -1,23 +1,14 @@
-<html>
-    <!DOCTYPE html>
-    <html lang="es">
-
-    <?php 
+<?php 
     session_start();
-    
-    // Verificar si el usuario ha iniciado sesión
-    if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-        // Mostrar el mensaje de bienvenida junto con el nombre de usuario
-        echo 'Bienvenido, ' . $_SESSION['usuario'];
-        echo '<br>Rol: ' . $_SESSION['rol'];
-        echo '<br>Correo: ' .$_SESSION['correo'];
-    } else {
-        // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
-        echo '#Por favor debes iniciar sesión ';
-    }
+
     //conexion a la BDD
     require_once "PHP/coneccion.php";
-    ?>
+?>
+
+<html>
+<!DOCTYPE html>
+<html lang="es">
+
 
     <head>
         <meta charset="UTF-8">
@@ -98,6 +89,14 @@
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
     <a href="index.php" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
         <h2 class="m-0 text-black">Viveros Luanne</h2>
+        <?php
+            if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+            echo '&nbsp; Bienvenido,   ' . $_SESSION['usuario']; 
+            } else {
+                // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
+                echo '&nbsp;&nbsp;#Por favor debes iniciar sesión ';
+            }
+            ?>
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>

@@ -1,4 +1,23 @@
 <?php
+session_start(); // SESSION START, NOS SIRVE PARA PODER INICIAR SESION CON NUESTRO USUARIO.
+
+// Verificar si el usuario ha iniciado sesión
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    // El usuario no ha iniciado sesión, redireccionar a la página de inicio de sesión
+    header("location: ../login.php");
+    exit;
+}
+
+// Verificar si el usuario tiene el rol de administrador
+if ($_SESSION['rol'] !== 'admin') {
+    // El usuario no tiene permisos de administrador, redireccionar a una página de acceso denegado o mostrar un mensaje de error
+    echo "Acceso denegado. No tienes los permisos necesarios para acceder a esta página.";
+    echo 'Te estamos redireccionando';
+    // Redireccionar a index.php después de 5 segundos
+    header("refresh:5;url=../index.php");
+    exit;
+}
+
 require_once "../PHP/coneccion.php";
 if (isset($_POST)) {
     if (!empty($_POST)) {
@@ -12,7 +31,7 @@ if (isset($_POST)) {
 include("header.php");
 ?>
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Categorias</h1>
+    <h1 class="h3 mb-0 text-gray-800">Administrador de Usuarios</h1>
     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="abrirCategoria"><i class="fas fa-plus fa-sm text-white-50"></i> Nuevo</a>
 </div>
 <div class="row">
@@ -23,34 +42,44 @@ include("header.php");
                     <tr>
                         <th>Id</th>
                         <th>Nombre</th>
-                        <th>Eliminar</th>
+                        <th>Rol</th>
                         <th>Editar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    $query = mysqli_query($coneccion, "SELECT * FROM categorias ORDER BY id DESC");
+                    $query = mysqli_query($coneccion, "SELECT * FROM usuarios ORDER BY id DESC");
+                    while ($data = mysqli_fetch_assoc($query)) { ?>
+                    <?php
+                    $query = mysqli_query($coneccion, "SELECT * FROM usuarios ORDER BY id DESC");
                     while ($data = mysqli_fetch_assoc($query)) { ?>
                         <tr>
                             <td><?php echo $data['id']; ?></td>
-                            <td><?php echo $data['categoria']; ?></td>
-                            <td>
-                                <form method="post" action="eliminar.php?accion=cli&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
-                                    <button class="btn btn-danger" type="submit">Eliminar</button> 
-                                </form>
-                            </td>
+                            <td><?php echo $data['nombre_completo']; ?></td>
+                            <td><?php echo $data['rol']; ?></td>
+                            
+
 
                             <td>
                                 <!-- Este boton editar -->
-
                                 <form method="post" action="editar.php?accion=cli&id=<?php echo $data['id']; ?>" class="d-inline editar">
                                     <button class="btn btn-danger" type="submit">Editar</button>
                                 </form>
-
                                 <!-- Fin boton editar -->
-                                
                             </td>
+
+                            <td>
+                                <!-- Este boton eliminar -->
+                                <form method="post" action="eliminar.php?accion=cli&id=<?php echo $data['id']; ?>" class="d-inline eliminar">
+                                    <button class="btn btn-danger" type="submit">Eliminar</button> 
+                                </form>
+                                <!-- Este boton eliminar -->
+                            </td>
+
+                            
                         </tr>
+                    <?php } ?>
                     <?php } ?>
                 </tbody>
             </table>

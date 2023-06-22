@@ -61,7 +61,7 @@ include("header.php"); ?>
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Productos</h1>
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="abrirProducto"><i class="fas fa-plus fa-sm text-white-50"></i> Nuevo</a>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm" id="abrirProducto"><i class="fas fa-plus fa-sm text-white-50"></i> Nuevo</a>
 </div>
 <div class="row">
     <div class="col-md-12">
@@ -132,7 +132,7 @@ include("header.php"); ?>
 <div id="productos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-gradient-primary text-white">
+            <div class="modal-header bg-gradient-success text-white">
                 <h5 class="modal-title" id="title">Nuevo Producto</h5>
                 <button class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -204,7 +204,7 @@ include("header.php"); ?>
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Registrar</button>
+                    <button class="btn btn-success" type="submit">Registrar</button>
                 </form>
             </div>
         </div>

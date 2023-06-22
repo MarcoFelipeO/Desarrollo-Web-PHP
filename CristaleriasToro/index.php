@@ -3,16 +3,7 @@
 <?php
 session_start();
 
-// Verificar si el usuario ha iniciado sesión
-if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-    // Mostrar el mensaje de bienvenida junto con el nombre de usuario
-    echo 'Bienvenido, ' . $_SESSION['usuario'];
-    echo '<br>Rol: ' . $_SESSION['rol'];
-    echo '<br>Correo: ' .$_SESSION['correo'];
-} else {
-    // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
-    echo '#Por favor debes iniciar sesión ';
-}
+
 
 require_once "PHP/coneccion.php";
 ?>
@@ -86,6 +77,14 @@ require_once "PHP/coneccion.php";
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0 texto-éxito"> Viveros LUANNE</h2>
+            <?php
+            if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+            echo '&nbsp; Bienvenido,   ' . $_SESSION['usuario']; 
+            } else {
+                // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
+                echo '&nbsp;&nbsp;#Por favor debes iniciar sesión ';
+            }
+            ?>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -103,6 +102,21 @@ require_once "PHP/coneccion.php";
     </nav>
     <!-- Navbar End -->
 
+
+<!--<?php 
+echo '<div>';
+    // Verificar si el usuario ha iniciado sesión
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+    // Mostrar el mensaje de bienvenida junto con el nombre de usuario
+    //echo 'Bienvenido, ' . $_SESSION['usuario'];
+    echo 'Rol: ' . $_SESSION['rol'];
+    echo '<br>Correo: ' .$_SESSION['correo'];
+} else {
+    // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
+    //echo '#Por favor debes iniciar sesión ';
+}
+echo '</div>';
+?> -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.4s">

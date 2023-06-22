@@ -77,7 +77,7 @@ if (isset($_GET['id'])) {
                     <?php } ?>
                 </select>
             </div>
-            <input type="submit" class="btn btn-primary" value="Actualizar">
+            <input type="submit" class="btn btn-success" value="Actualizar">
         </form>
     </div>
 
