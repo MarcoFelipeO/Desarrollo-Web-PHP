@@ -1,8 +1,12 @@
-<?php require_once "PHP/coneccion.php";
-require_once "PHP/config.php";
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
+<?php
+session_start();
+require_once "PHP/coneccion.php";
+require_once "PHP/config.php";
+
+?>
 
 <head>
     <meta charset="utf-8" />
@@ -72,6 +76,14 @@ require_once "PHP/config.php";
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0 texto-éxito"> Viveros LUANNE</h2>
+            <?php
+            if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+            echo '&nbsp; Bienvenido,   ' . $_SESSION['usuario']; 
+            } else {
+                // El usuario no ha iniciado sesión, mostrar un mensaje de error o redireccionar al formulario de inicio de sesión
+                echo '&nbsp;&nbsp;#Por favor debes iniciar sesión ';
+            }
+            ?>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -108,6 +120,15 @@ require_once "PHP/config.php";
         </div>
     </header>
 
+
+
+
+
+
+
+
+
+    
     <div class="fondocarrito">
     <section class="py-5">
         <div class="container px-4 px-lg-5">
@@ -121,6 +142,7 @@ require_once "PHP/config.php";
                                     <th><strong>Precios</strong></th>
                                     <th><strong>Unidades</strong></th>
                                     <th><strong>Cantidad a pagar</strong></th>
+                                    <th><strong>Acciones</strong></th> <!-- Nueva columna para el botón de eliminar -->
                                     <!--<th><strong>Total</strong></th>-->
                                 </tr>
                             </thead>
@@ -198,6 +220,7 @@ require_once "PHP/config.php";
                 <td>$${producto.precio_unitario.toFixed(3)}</td>
                 <td>${cantidad}</td>
                 <td>$${(producto.precio_unitario * producto.cantidad).toFixed(3)}</td>
+                <td><button class="btn btn-danger btn-sm" onclick="eliminarUnidad('${key}')">Eliminar</button></td>
               </tr>
             `;
           }
@@ -212,6 +235,23 @@ require_once "PHP/config.php";
     }
   }
 }
+
+
+function eliminarUnidad(index) {
+  if (localStorage.getItem("productos") != null) {
+    let productos = JSON.parse(localStorage.getItem("productos"));
+    
+    productos.splice(index, 1);
+    localStorage.setItem("productos", JSON.stringify(productos));
+    
+    mostrarCarrito();
+  }
+}
+
+
+
+
+
     </script>
     </div>
 
