@@ -3,11 +3,9 @@
 session_start ();
 
 
-
-
  require_once "PHP/coneccion.php"; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8"/>
@@ -171,17 +169,17 @@ session_start ();
                         <div class="col mb-5 productos" category="<?php echo $data['categoria']; ?>">
                             <div class="card h-100">
                                 <!-- Product image-->
-                                <img id="imgcaja" class="card-img-top" src="img/<?php echo $data['imagen']; ?>" height="240"  alt="..." />
+                                <img id="imgcaja" class="card-img-top" src="img/<?php echo $data['imagen']; ?>" height="200"  alt="..." />
                                 <!-- Product details-->
                                 <div class="card-body p-4">
                                     <div class="text-center">
                                         <!-- Product name-->
                                         <h5 class="fw-bolder"><?php echo $data['nombre'] ?></h5>
                                         <p class="descripcion-recortada"><?php echo substr($data['descripcion'], 0, 70); ?></p>
-                                        <a class="ver-mas" href="#" data-toggle="modal" data-target="#descripcionModal-<?php echo $data['id']; ?>">Ver más</a>
+                                        <a class="ver-mas" href="#" data-toggle="modal" data-target="#descripcionModal-<?php echo $data['id']; ?>">Ver más</a> 
                                         <!-- Product price-->
                                         <span class="">$<?php echo number_format($data['precio_unitario'], 0, ',', '.'); ?></span><br><br>
-                                        <p>Stock Disponible: <br><?php echo $data['stock_Productos']; ?></p>
+                                       <!-- <p>Stock Disponible: <br><?php echo $data['stock_Productos']; ?></p> -->
                                     </div>
                                 </div>
                                 <!-- Product actions-->
