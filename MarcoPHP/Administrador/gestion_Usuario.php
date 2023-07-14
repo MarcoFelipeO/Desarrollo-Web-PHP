@@ -32,7 +32,7 @@ include("header.php");
 ?>
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Administrador de Usuarios</h1>
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="abrirCategoria"><i class="fas fa-plus fa-sm text-white-50"></i> Nuevo</a>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm" id="abrirCategoria"><i class="fas fa-plus fa-sm text-white-50"></i> Agregar Usuario</a>
 </div>
 <div class="row">
     <div class="col-md-12">
@@ -64,7 +64,7 @@ include("header.php");
                             <td>
                                 <!-- Este boton editar -->
                                 <form method="post" action="editar.php?accion=cli&id=<?php echo $data['id']; ?>" class="d-inline editar">
-                                    <button class="btn btn-danger" type="submit">Editar</button>
+                                    <button class="btn btn-success" type="submit">Editar</button>
                                 </form>
                                 <!-- Fin boton editar -->
                             </td>
@@ -91,7 +91,7 @@ include("header.php");
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header bg-gradient-primary text-white">
-                <h5 class="modal-title" id="title">Nueva Categoria</h5>
+                <h5 class="modal-title" id="title">Nuevo Usuario</h5>
                 <button class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -100,7 +100,7 @@ include("header.php");
             <div class="modal-body">
                 <form action="" method="POST" autocomplete="off">
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre">Nombre Usuario</label>
                         <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Categoria" required>
                     </div>
                     <button class="btn btn-primary" type="submit">Registrar</button>
